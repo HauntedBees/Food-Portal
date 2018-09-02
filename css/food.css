@@ -1,0 +1,37 @@
+html, body { max-width: 100%; overflow-x: hidden }
+#main { padding-top: 42px }
+@media (max-width: 768px) {
+    #main { padding-top: 55px; padding-bottom: 40px; padding-left: 0 !important; padding-right: 0 !important }
+    .hide-sm { display: none }
+    .navbar-brand { padding: 0 }
+    .navbar-brand > a { padding: 0.75rem 0; float: left; padding-left: 1rem }
+    .cardimg { max-height: 100px !important }
+}
+@media (min-width: 768px) { .sm-only { display: none } }
+.cardimg { border: 1px #BEBEBE solid; border-radius: 5px; max-height: 140px }
+.imgLicense { text-align: right; font-size: x-small; padding: 6px; background-color: rgba(0,0,0,.03) !important }
+.emoji { display: inline-block; width: 16px; height: 16px }
+.list-group-item { word-break: keep-all; background-color: inherit }
+.card { margin-bottom: 10px }
+a { color: rgb(0, 155, 255) }
+#viewAll, .spiceattr, .spice { color: rgb(128, 255, 255) }
+.navbar-brand > a { color: #FFFFFF }
+#hammeOfBurge {
+    margin-right: 0px;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    border-bottom-left-radius: 0.25rem;
+    font-weight: bold;
+    float: right;
+}
+.row > .list-group > .list-group-item:first-child { padding-top: 0 }
+.searchPane { padding-bottom: 0.25rem; max-height: 500px; overflow-y: scroll; }
+.filterBtn, .filterBtn2, #filterViewAll {
+    width: 80%;
+    margin: 0.2rem auto;
+    display: block;
+}
+hr { background-color: #FFFFFF; margin: 1rem 2rem }
+#filterL, #filterR { padding: 0 }
+footer { background-color: #44403A; padding-top: 0.25rem; padding-bottom: 0.2rem; border-top: 1px solid black }
+.copyrightLink { color: #AAAACC }

@@ -1,0 +1,5849 @@
+{
+	"sheets": [
+		{
+			"name": "Spices",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "1",
+					"name": "emoji",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "species",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "cinnamons"
+				},
+				{
+					"typeStr": "5:herb,spice,blend",
+					"name": "type"
+				},
+				{
+					"typeStr": "1",
+					"name": "description",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "imgDesc",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "origin",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "license",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "flavors",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "foods",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "dishes",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "pairsWith"
+				},
+				{
+					"typeStr": "8",
+					"name": "relatedSpices",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "recipes",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "allspice",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "apple"
+						},
+						{
+							"food": "beet"
+						},
+						{
+							"food": "cabbage"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						},
+						{
+							"food": "turnip"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "citrus"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"description": "These dried fruits are an important ingredient in Caribbean cuisine.",
+					"origin": "Caribbean",
+					"name": "Allspice",
+					"emoji": "1F347",
+					"species": "Pimenta dioica",
+					"relatedSpices": [],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Allspice Bowl",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:AllspiceBowl.JPG",
+							"authorName": "Jonathunder",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Jonathunder",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Allspice berries",
+					"recipes": [
+						{
+							"name": "Jerk Chicken",
+							"url": "https://www.allrecipes.com/recipe/8667/jays-jerk-chicken"
+						},
+						{
+							"name": "Cincinnati Chili",
+							"url": "https://www.allrecipes.com/recipe/206953/authentic-cincinnati-chili"
+						},
+						{
+							"name": "Jamaican Jerk Dry Rub",
+							"url": "https://www.allrecipes.com/recipe/141962/jamaican-jerk-dry-rub"
+						},
+						{
+							"name": "Chai Tea",
+							"url": "https://www.allrecipes.com/recipe/46350/shemakes-instant-chai-tea"
+						},
+						{
+							"name": "Spiced Cookies",
+							"url": "https://www.allrecipes.com/recipe/260068/spiced-sugar-cookies"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "Jamaica_pimenta"
+						},
+						{
+							"name": "myrtle_pepper"
+						}
+					]
+				},
+				{
+					"id": "amchur",
+					"emoji": "1F96D",
+					"name": "Amchoor",
+					"species": "Mangifera indica",
+					"cinnamons": [
+						{
+							"name": "aamchur"
+						},
+						{
+							"name": "amchur"
+						},
+						{
+							"name": "mango powder"
+						}
+					],
+					"type": 1,
+					"description": "Unripe green mangoes dried and ground up.",
+					"imgDesc": "Dried mangos, prior to being ground up",
+					"origin": "South Asian",
+					"license": [
+						{
+							"imgName": "Dried Mango Slices",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Dried_Mango_Slices.JPG",
+							"authorName": "Miansari66",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Miansari66",
+							"licenseName": "Public Domain"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 8
+						},
+						{
+							"flavor": 9
+						}
+					],
+					"foods": [
+						{
+							"food": "vegetables"
+						},
+						{
+							"food": "chicken"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "curry"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "turmeric"
+						}
+					],
+					"relatedSpices": [],
+					"recipes": [
+						{
+							"name": "Potato and Pea Curry",
+							"url": "https://www.bbc.com/food/recipes/potato_and_pea_curry_19537"
+						},
+						{
+							"name": "Punjabi Chole",
+							"url": "http://hungrydesi.com/2009/02/15/punjabi-chole-with-amchur-crusted-aloo/"
+						},
+						{
+							"name": "Chana Masala",
+							"url": "https://smittenkitchen.com/2010/02/chana-masala/"
+						}
+					]
+				},
+				{
+					"id": "basil",
+					"flavors": [
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "olive"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "olive_oil"
+						},
+						{
+							"food": "onions"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "stir_fry"
+						},
+						{
+							"dish": "tomato_sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "winter_savory"
+						}
+					],
+					"description": "The leaves of a plant belonging to the mint family. Can be served fresh or dried.",
+					"origin": "Mediterranean",
+					"name": "Basil",
+					"emoji": "1F33F",
+					"species": "Ocimum basilicum",
+					"relatedSpices": [],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Basilico Genovese di Prà-2",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Basilico_Genovese_di_Pr%C3%A0-2.jpg",
+							"authorName": "Twice25",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Twice25",
+							"licenseName": "CC BY-SA 2.5"
+						}
+					],
+					"imgDesc": "Genovese basil leaves",
+					"recipes": [
+						{
+							"name": "Pesto",
+							"url": "https://www.allrecipes.com/recipe/258213/proper-pesto/"
+						},
+						{
+							"name": "Basil Ricotta Gnocchi",
+							"url": "https://www.allrecipes.com/recipe/254944/chef-johns-basil-ricotta-gnocchi/"
+						},
+						{
+							"name": "Tomato Basil Sauce",
+							"url": "https://www.allrecipes.com/recipe/19376/fresh-tomato-basil-sauce/"
+						},
+						{
+							"name": "Caprese Salad",
+							"url": "https://www.allrecipes.com/recipe/228126/caprese-salad-with-balsamic-reduction/"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "sweet_basil"
+						},
+						{
+							"name": "great_basil"
+						},
+						{
+							"name": "Saint-Joseph's-wort"
+						}
+					]
+				},
+				{
+					"id": "bay_leaf",
+					"flavors": [
+						{
+							"flavor": 0
+						}
+					],
+					"foods": [
+						{
+							"food": "mushroom"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "shellfish"
+						},
+						{
+							"food": "olive_oil"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "celery"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "risotto"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "sage"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "winter_savory"
+						}
+					],
+					"description": "Bay leaves are often left in sauces as they cook, then removed before serving.",
+					"origin": "Mediterranean",
+					"name": "Bay Leaf",
+					"emoji": "1F33F",
+					"species": "Laurus nobilis",
+					"relatedSpices": [
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Bay Leaves",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Bay_Leaves.JPG",
+							"authorName": "Miansari66",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Miansari66",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "Dried bay leaves",
+					"recipes": [
+						{
+							"name": "Roasted Vegetable Stock",
+							"url": "https://www.allrecipes.com/recipe/147142/roasted-vegetable-stock"
+						},
+						{
+							"name": "Risotto",
+							"url": "https://www.telegraph.co.uk/foodanddrink/recipes/8822742/Risotto-with-bay-leaves-pecorino-cheese-and-prosecco-recipe.html"
+						},
+						{
+							"name": "Pot Roast",
+							"url": "https://www.allrecipes.com/recipe/229953/pot-roast-with-vegetables"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "sweet_bay"
+						},
+						{
+							"name": "laurel"
+						}
+					]
+				},
+				{
+					"id": "black_pepper",
+					"flavors": [
+						{
+							"flavor": 5
+						},
+						{
+							"flavor": 2
+						}
+					],
+					"foods": [
+						{
+							"food": "onions"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "olive_oil"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "risotto"
+						},
+						{
+							"dish": "salad_dressing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "mustard"
+						},
+						{
+							"id": "star_anise"
+						}
+					],
+					"description": "The dried and cooked unripe fruit of the pepper plant.",
+					"origin": "South Asian",
+					"name": "Black Pepper",
+					"emoji": "1F331",
+					"species": "Piper nigrum",
+					"relatedSpices": [
+						{
+							"id": "garam_masala"
+						},
+						{
+							"id": "white_pepper"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Spilled Pepper",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Spilled_Pepper.jpg",
+							"authorName": "Bryanwake",
+							"authorURL": "https://en.wikipedia.org/wiki/User:Bryanwake",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "Some freshly ground pepper",
+					"recipes": [
+						{
+							"name": "Black Pepper Beef",
+							"url": "https://www.allrecipes.com/recipe/261791/peposa-dellimpruneta-tuscan-black-pepper-beef"
+						},
+						{
+							"name": "Black Pepper Rings",
+							"url": "https://www.allrecipes.com/recipe/20033/black-pepper-rings"
+						},
+						{
+							"name": "Black Pepper Gravy",
+							"url": "https://www.allrecipes.com/recipe/261134/black-pepper-gravy"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "cajun_seasoning",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 5
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "celery"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "shellfish"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						}
+					],
+					"pairsWith": [],
+					"description": "This spice blend is often used in Cajun cuisine.",
+					"origin": "Cajun",
+					"name": "Cajun Seasoning",
+					"emoji": "1F336",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "cayenne"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Kruidenmengeling-spice",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Kruidenmengeling-spice.jpg",
+							"authorName": "Henna",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Henna",
+							"licenseName": "CC BY-SA 1.0"
+						}
+					],
+					"imgDesc": "An example of a Cajun spice blend",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "cardamom",
+					"flavors": [
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "citrus"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "peas"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "duck"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "onions"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "bread"
+						},
+						{
+							"dish": "tea"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "star_anise"
+						}
+					],
+					"description": "Seed pods from a plant in the ginger family. One of the most expensive spices in the world after vanilla and saffron.",
+					"origin": "South Asian",
+					"name": "Cardamom",
+					"emoji": "1F331",
+					"species": "Elettaria cardamomum",
+					"relatedSpices": [
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Cardamom (Kerala, India)",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Cardamom_(Kerala,_India).jpg",
+							"authorName": "Getpraveennair",
+							"authorURL": "https://commons.wikimedia.org/w/index.php?title=User:Getpraveennair",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "A dried Cardamom pod and a peeled one",
+					"recipes": [
+						{
+							"name": "Finnish Nissua",
+							"url": "https://www.allrecipes.com/recipe/18123/finnish-nissua"
+						},
+						{
+							"name": "Kheer",
+							"url": "https://www.allrecipes.com/recipe/74203/kheer-rice-pudding"
+						},
+						{
+							"name": "Hot Cross Buns",
+							"url": "https://www.allrecipes.com/recipe/257871/chef-johns-hot-cross-buns"
+						},
+						{
+							"name": "Beef Samosas",
+							"url": "https://www.allrecipes.com/recipe/24871/beef-samosas"
+						},
+						{
+							"name": "Chicken Curry",
+							"url": "https://www.allrecipes.com/recipe/52678/spicy-indian-chicken-curry-yummy"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "cardamon"
+						},
+						{
+							"name": "cardamum"
+						}
+					]
+				},
+				{
+					"id": "cayenne",
+					"flavors": [
+						{
+							"flavor": 5
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "fenugreek"
+						},
+						{
+							"id": "mint"
+						}
+					],
+					"description": "A somewhat hot chili pepper that can be dried and ground up to make a powder.",
+					"origin": "Mexican",
+					"name": "Cayenne Pepper",
+					"emoji": "1F336",
+					"species": "Capsicum annuum",
+					"relatedSpices": [
+						{
+							"id": "cajun_seasoning"
+						},
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "curry_powder"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Capsicum frutescens",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Capsicum_frutescens.jpg",
+							"authorName": "Eric in SF",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Eric_in_SF",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "Big pile of cayenne peppers",
+					"recipes": [
+						{
+							"name": "Stuffed Peppers",
+							"url": "https://www.allrecipes.com/recipe/222002/chef-johns-stuffed-peppers"
+						},
+						{
+							"name": "Vinegar Pepper Sauce",
+							"url": "https://www.allrecipes.com/recipe/17517/uncle-mikes-vinegar-pepper-sauce"
+						},
+						{
+							"name": "Peppered Shrimp Alfredo",
+							"url": "https://www.allrecipes.com/recipe/133128/peppered-shrimp-alfredo"
+						},
+						{
+							"name": "Peanut Curry Chicken",
+							"url": "https://www.allrecipes.com/recipe/244979/chef-johns-peanut-curry-chicken"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "red_pepper"
+						}
+					]
+				},
+				{
+					"id": "chervil",
+					"flavors": [
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "celery"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "salad_dressing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "tarragon"
+						},
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "chives"
+						}
+					],
+					"description": "A mild herb for mild dishes",
+					"origin": "Caucasian",
+					"name": "Chervil",
+					"emoji": "1F33F",
+					"species": "Anthriscus cerefolium",
+					"relatedSpices": [
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "coriander_seeds"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Chervil",
+							"imgURL": "https://pxhere.com/en/photo/1246582",
+							"authorName": "pxhere",
+							"authorURL": "https://pxhere.com/en/photo/1246582",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "Some chervil growing",
+					"recipes": [
+						{
+							"name": "Roasted Cauliflower and Leek Soup",
+							"url": "https://www.allrecipes.com/recipe/229372/roasted-cauliflower-and-leek-soup"
+						},
+						{
+							"name": "Green Apple-Parmesan Towers",
+							"url": "https://www.allrecipes.com/recipe/266733/green-apple-parmesan-towers"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "French parsley"
+						},
+						{
+							"name": "garden chervil"
+						}
+					]
+				},
+				{
+					"id": "chili_powder",
+					"flavors": [
+						{
+							"flavor": 3
+						},
+						{
+							"flavor": 5
+						}
+					],
+					"foods": [
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "green_beans"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "onions"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "paprika"
+						}
+					],
+					"description": "A blend of ground chili pepper and a handful of other ingredients.",
+					"origin": "Mexican",
+					"name": "Chili Powder",
+					"emoji": "1F336",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Anchochilipowder",
+							"imgURL": "https://en.wikipedia.org/wiki/File:Anchochilipowder.JPG",
+							"authorName": "Badagnani",
+							"authorURL": "https://en.wikipedia.org/wiki/User:Badagnani",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Ancho chili powder",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "chives",
+					"flavors": [
+						{
+							"flavor": 4
+						}
+					],
+					"foods": [
+						{
+							"food": "beef"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "risotto"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "basil"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "mint"
+						},
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "chervil"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "tarragon"
+						}
+					],
+					"description": "Related to garlic and onions, these long green fellows are used for their stems.",
+					"origin": "Eurasian",
+					"name": "Chives",
+					"emoji": "1F33F",
+					"species": "Allium schoenoprasum",
+					"relatedSpices": [
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Chive seedlings sprouting",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Chive_seedlings_sprouting.jpg",
+							"authorName": "Norman21",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Norman21",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some chives sprouting in a pot",
+					"recipes": [
+						{
+							"name": "Cheese Drop Biscuits",
+							"url": "https://www.allrecipes.com/recipe/23641/cheese-drop-biscuits"
+						},
+						{
+							"name": "Cheesy Chicken and Chive Sauce",
+							"url": "https://www.allrecipes.com/recipe/40345/cheesy-chicken-and-chive-sauce"
+						},
+						{
+							"name": "Curried Pumpkin Soup with Chives",
+							"url": "https://www.allrecipes.com/recipe/245089/curried-pumpkin-soup-with-chives"
+						},
+						{
+							"name": "Boiled Potatoes with Chives",
+							"url": "https://www.allrecipes.com/recipe/231861/boiled-potatoes-with-chives"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "cinnamon",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "apple"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "pear"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "fruit_sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "star_anise"
+						},
+						{
+							"id": "vanilla"
+						}
+					],
+					"description": "The inner bark of a tree, used either in stick form or ground into a powder.",
+					"origin": "South Asian",
+					"name": "Cinnamon",
+					"emoji": "1F332",
+					"species": "Cinnamomum verum",
+					"relatedSpices": [
+						{
+							"id": "five_spice"
+						},
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Cinnamomum verum spices",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Cinnamomum_verum_spices.jpg",
+							"authorName": "Simon A. Eugster",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:LivingShadow",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Cinnamon sticks, powder, and dried flowers",
+					"recipes": [
+						{
+							"name": "Pumpkin Cinnamon Rolls",
+							"url": "https://www.allrecipes.com/recipe/229860/chef-johns-pumpkin-cinnamon-rolls"
+						},
+						{
+							"name": "Cinnamon Roasted Sweet Potatoes",
+							"url": "https://www.allrecipes.com/recipe/58616/cinnamon-roasted-sweet-potatoes"
+						},
+						{
+							"name": "Cinnamon Pie",
+							"url": "https://www.allrecipes.com/recipe/12578/cinnamon-pie"
+						},
+						{
+							"name": "Horchata",
+							"url": "https://www.allrecipes.com/recipe/141828/lolas-horchata"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "cloves",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "apple"
+						},
+						{
+							"food": "beet"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread"
+						},
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "star_anise"
+						},
+						{
+							"id": "vanilla"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "ginger"
+						}
+					],
+					"description": "Aromatic dried flower buds.",
+					"origin": "South Asian",
+					"name": "Cloves",
+					"emoji": "1F33C",
+					"species": "Syzygium aromaticum",
+					"relatedSpices": [
+						{
+							"id": "five_spice"
+						},
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "ClovesDried",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:ClovesDried.jpg",
+							"authorName": "Brian Arthur",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Ies",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Dried cloves",
+					"recipes": [
+						{
+							"name": "Basmati Rice",
+							"url": "https://www.allrecipes.com/recipe/72349/indian-style-basmati-rice"
+						},
+						{
+							"name": "Gingerbread Biscotti",
+							"url": "https://www.allrecipes.com/recipe/43941/gingerbread-biscotti"
+						},
+						{
+							"name": "Coconut Amarela",
+							"url": "https://www.196flavors.com/angola-cocada-amarela/"
+						},
+						{
+							"name": "Lamb Tagine",
+							"url": "https://www.allrecipes.com/recipe/105044/lamb-tagine"
+						},
+						{
+							"name": "Cranberry Cider",
+							"url": "https://www.allrecipes.com/recipe/32555/hot-spiced-cranberry-cider"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "coriander",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 8
+						}
+					],
+					"foods": [
+						{
+							"food": "corn"
+						},
+						{
+							"food": "beans"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "thyme"
+						}
+					],
+					"description": "Leaves, also known as cilantro.",
+					"origin": "Middle Eastern",
+					"name": "Coriander",
+					"emoji": "1F33F",
+					"species": "Coriandrum sativum",
+					"relatedSpices": [
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "parsley"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "A scene of Coriander leaves",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:A_scene_of_Coriander_leaves.JPG",
+							"authorName": "Thamizhpparithi Maari",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Thamizhpparithi_Maari",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "A bunch of coriander leaves",
+					"recipes": [
+						{
+							"name": "Orange Cilantro Rice",
+							"url": "https://www.allrecipes.com/recipe/85856/orange-cilantro-rice"
+						},
+						{
+							"name": "Cilantro Cream Sauce",
+							"url": "https://www.allrecipes.com/recipe/20446/amys-cilantro-cream-sauce"
+						},
+						{
+							"name": "Enchiladas Verdes",
+							"url": "https://www.allrecipes.com/recipe/59900/authentic-enchiladas-verdes"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "cilantro"
+						},
+						{
+							"name": "Chinese_parsley"
+						}
+					]
+				},
+				{
+					"id": "coriander_seeds",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 9
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "stuffing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"description": "Dried fruits from the coriander plant. Ground up to be a spice.",
+					"origin": "Middle Eastern",
+					"name": "Coriander Seeds",
+					"emoji": "1F347",
+					"species": "Coriandrum sativum",
+					"relatedSpices": [
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "curry_powder"
+						},
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Coriander Seeds",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Coriander_Seeds.jpg",
+							"authorName": "Sanjay Acharya",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Sanjay_ach",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "A large pile of dried coriander fruits",
+					"recipes": [
+						{
+							"name": "Ajika Salsa",
+							"url": "https://www.saveur.com/red-ajika-recipe"
+						},
+						{
+							"name": "Mantu Dumplings",
+							"url": "http://www.afghankitchenrecipes.com/recipe/mantu-beef-dumplings/"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "cilantro_seeds"
+						}
+					]
+				},
+				{
+					"id": "cumin",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 3
+						}
+					],
+					"foods": [
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "green_beans"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "tofu"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "mint"
+						},
+						{
+							"id": "paprika"
+						}
+					],
+					"description": "Dried seeds that are often ground up before using.",
+					"origin": "Middle Eastern",
+					"name": "Cumin",
+					"emoji": "1F331",
+					"species": "Cuminum cyminum",
+					"relatedSpices": [
+						{
+							"id": "cajun_seasoning"
+						},
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "curry_powder"
+						},
+						{
+							"id": "garam_masala"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Sa cumin",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Sa_cumin.jpg",
+							"authorName": " \tSanjay Acharya",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Sanjay_ach",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some cumin seeds",
+					"recipes": [
+						{
+							"name": "Shakshouka",
+							"url": "https://www.allrecipes.com/recipe/245362/chef-johns-shakshuka"
+						},
+						{
+							"name": "Aloo Gobi",
+							"url": "https://www.allrecipes.com/recipe/151997/alicias-aloo-gobi"
+						},
+						{
+							"name": "Moroccan Couscous",
+							"url": "https://www.allrecipes.com/recipe/105045/moroccan-couscous"
+						},
+						{
+							"name": "Albondigas",
+							"url": "https://www.allrecipes.com/recipe/245585/turkey-and-rice-meatballs-albondigas"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "curry_powder",
+					"flavors": [
+						{
+							"flavor": 5
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "cabbage"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "green_beans"
+						},
+						{
+							"food": "spinach"
+						},
+						{
+							"food": "zucchini"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread_dip"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "rice"
+						}
+					],
+					"pairsWith": [],
+					"description": "A spice mix originating from India.",
+					"origin": "South Asian",
+					"name": "Curry Powder",
+					"emoji": "1F35B",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "fenugreek"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Curry powder in the spice-bazaar in Istanbul",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Curry_powder_in_the_spice-bazaar_in_Istanbul.jpg",
+							"authorName": "Thomas Steiner",
+							"authorURL": "https://de.wikipedia.org/wiki/Benutzer:Thire",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "A big pile of curry powder",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "dill",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 8
+						}
+					],
+					"foods": [
+						{
+							"food": "beet"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "spinach"
+						},
+						{
+							"food": "lamb"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "mustard"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "parsley"
+						}
+					],
+					"description": "Nice fluffy leaves.",
+					"origin": "South Asian",
+					"name": "Dill",
+					"emoji": "1F33F",
+					"species": "Anethum graveolens",
+					"relatedSpices": [],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Dill Spice Plant",
+							"imgURL": "https://pixabay.com/en/dill-spice-plant-food-herb-green-2826179/",
+							"authorName": "Zsuzsanna Tóth",
+							"authorURL": "https://pixabay.com/en/users/suetot-5317196/",
+							"licenseName": "CC0 1.0"
+						}
+					],
+					"imgDesc": "Just a nice chunk of dill",
+					"recipes": [
+						{
+							"name": "Tzatziki",
+							"url": "https://www.allrecipes.com/video/3419/chef-johns-tzatziki-sauce"
+						},
+						{
+							"name": "Garlic and Dill Salmon",
+							"url": "https://www.allrecipes.com/recipe/79701/garlic-and-dill-salmon"
+						},
+						{
+							"name": "Maple Dill Carrots",
+							"url": "https://www.allrecipes.com/recipe/87694/maple-dill-carrots"
+						},
+						{
+							"name": "Dill Pickles",
+							"url": "https://www.allrecipes.com/recipe/218121/pops-dill-pickles"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "fennel",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 0
+						}
+					],
+					"foods": [
+						{
+							"food": "beef"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "celery"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "tomato_sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "star_anise"
+						}
+					],
+					"description": "Seeds from a plant in the carrot family.",
+					"origin": "Mediterranean",
+					"name": "Fennel",
+					"emoji": "1F955",
+					"species": "Foeniculum vulgare",
+					"relatedSpices": [
+						{
+							"id": "five_spice"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Fennel seed",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Fennel_seed.jpg",
+							"authorName": "Howcheng",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Howcheng",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Oh no they spilled their bottle of fennel seeds",
+					"recipes": [
+						{
+							"name": "Garlic, Fennel and Orange Grilled Chicken Thighs",
+							"url": "https://foodwishes.blogspot.com/2007/08/garlic-fennel-and-orange-grilled.html"
+						},
+						{
+							"name": "Fennel and Grapefruit Summer Salad",
+							"url": "https://www.allrecipes.com/recipe/201175/jennifers-fennel-and-grapefruit-summer-salad"
+						},
+						{
+							"name": "Fennel Risotto",
+							"url": "https://www.allrecipes.com/recipe/109548/fennel-risotto"
+						},
+						{
+							"name": "Potatoes Au Gratin with Fennel and Bacon",
+							"url": "https://www.allrecipes.com/recipe/167235/potatoes-au-gratin-with-fennel-and-bacon"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "fenugreek",
+					"emoji": "1F347",
+					"name": "Fenugreek",
+					"species": "Trigonella foenum-graecum",
+					"type": 1,
+					"description": "Bean seeds. You can also use the leaves as herbs.",
+					"imgDesc": "Fenugreek seeds",
+					"origin": "Middle Eastern",
+					"license": [
+						{
+							"imgName": "2017 0102 fenugreek seeds",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:2017_0102_fenugreek_seeds.jpg",
+							"authorName": "Takeaway",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Takeaway",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "citrus"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "vegetables"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "mustard"
+						},
+						{
+							"id": "star_anise"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "curry_powder"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Makhani Chicken",
+							"url": "https://www.allrecipes.com/recipe/24782/makhani-chicken-indian-butter-chicken"
+						},
+						{
+							"name": "Red Lentil Soup",
+							"url": "https://www.allrecipes.com/recipe/70330/vegan-red-lentil-soup"
+						},
+						{
+							"name": "Saag Paneer",
+							"url": "https://www.allrecipes.com/recipe/228957/authentic-saag-paneer"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "five_spice",
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "duck"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "celery"
+						},
+						{
+							"food": "mushroom"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "stir_fry"
+						}
+					],
+					"pairsWith": [],
+					"description": "A blend often used in Chinese and Taiwanese cuisine.",
+					"origin": "Chinese",
+					"name": "Five-Spice Powder",
+					"emoji": "1F331",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "star_anise"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "sichuan_pepper"
+						},
+						{
+							"id": "cinnamon"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Five Spice Powder",
+							"imgURL": "https://www.flickr.com/photos/sackton/6834786090",
+							"authorName": "Tim Sackton",
+							"authorURL": "https://www.flickr.com/photos/sackton/",
+							"licenseName": "CC BY-SA 2.0"
+						}
+					],
+					"imgDesc": "Five-spice powder with all of its base spices",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "garam_masala",
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "green_beans"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "squash"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "stir_fry"
+						}
+					],
+					"pairsWith": [],
+					"description": "A spice blend meant to warm the body.",
+					"origin": "South Asian",
+					"name": "Garam Masala",
+					"emoji": "1F331",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "coriander_seeds"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Garammasalaphoto",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Garammasalaphoto.jpg",
+							"authorName": "Badagnani",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Badagnani",
+							"licenseName": "CC BY 3.0"
+						}
+					],
+					"imgDesc": "Nice pile of Garam masala",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "garlic_powder",
+					"flavors": [
+						{
+							"flavor": 4
+						}
+					],
+					"foods": [
+						{
+							"food": "cabbage"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "mushroom"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "stir_fry"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "sage"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "mustard"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "sichuan_pepper"
+						}
+					],
+					"description": "Everyone's favorite vegetable, dried and ground into the best powder.",
+					"origin": "Central Asian",
+					"name": "Garlic Powder",
+					"emoji": "1F955",
+					"species": "Allium sativum",
+					"relatedSpices": [
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "chives"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Garlic Powder, Penzeys Spices, Arlington Heights MA",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Garlic_Powder,_Penzeys_Spices,_Arlington_Heights_MA.jpg",
+							"authorName": "John Phelan",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Faolin42",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "A nice scoop of garlic powder",
+					"recipes": [
+						{
+							"name": "Creamy Garlic Dip",
+							"url": "https://www.allrecipes.com/recipe/24659/creamy-garlic-dip"
+						},
+						{
+							"name": "Cheese Garlic Biscuits",
+							"url": "https://www.allrecipes.com/recipe/20148/cheese-garlic-biscuits-i"
+						},
+						{
+							"name": "Oven Roasted Parmesan Potatoes",
+							"url": "https://www.allrecipes.com/recipe/233393/oven-roasted-parmesan-potatoes"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "ginger",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "beet"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "citrus"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "stir_fry"
+						},
+						{
+							"dish": "dessert"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "mint"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "fenugreek"
+						},
+						{
+							"id": "lemon_verbena"
+						},
+						{
+							"id": "sichuan_pepper"
+						}
+					],
+					"description": "A delicious root that can be used fresh or powdered.",
+					"origin": "South Asian",
+					"name": "Ginger",
+					"emoji": "1F331",
+					"species": "Zingiber officinale",
+					"relatedSpices": [],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Ingwer 2 fcm",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Ingwer_2_fcm.jpg",
+							"authorName": "Frank C. Müller",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Frank_C._M%C3%BCller",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Good chunk of ginger and a knife, for like size comparison I guess?",
+					"recipes": [
+						{
+							"name": "Gingersnap Cookies",
+							"url": "https://www.allrecipes.com/recipe/245440/chef-johns-gingersnap-cookies"
+						},
+						{
+							"name": "Ginger-Turmeric Herbal Tea",
+							"url": "https://www.allrecipes.com/recipe/242148/ginger-turmeric-herbal-tea"
+						},
+						{
+							"name": "Ginger Pork Chops",
+							"url": "https://www.allrecipes.com/recipe/53302/grilled-asian-ginger-pork-chops"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "herbs_de_provence",
+					"flavors": [
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "olive"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "marinade"
+						}
+					],
+					"pairsWith": [],
+					"description": "A dried herb mix unsurprisingly from Provence, France.",
+					"origin": "French",
+					"name": "Herbes de Provence",
+					"emoji": "1F33F",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "sage"
+						},
+						{
+							"id": "tarragon"
+						},
+						{
+							"id": "summer_savory"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "Auberge Herbes de Provence",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Herbesdeprovence.jpg",
+							"authorName": " Karen Booth",
+							"authorURL": "https://www.flickr.com/people/frenchtart",
+							"licenseName": "CC BY 2.0"
+						}
+					],
+					"imgDesc": "All those herbs, all those flavors...",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "lemon_verbena",
+					"flavors": [
+						{
+							"flavor": 9
+						},
+						{
+							"flavor": 8
+						}
+					],
+					"foods": [
+						{
+							"food": "fish"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "apple"
+						},
+						{
+							"food": "citrus"
+						},
+						{
+							"food": "pork"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "fruit_sauce"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "tea"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "vanilla"
+						},
+						{
+							"id": "mint"
+						},
+						{
+							"id": "ginger"
+						}
+					],
+					"description": "The leaves add a lemon flavor to things, hence the name.",
+					"origin": "South American",
+					"name": "Lemon Verbena",
+					"emoji": "1F33F",
+					"species": "Aloysia citrodora",
+					"relatedSpices": [],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Aloysia citriodora 002",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Aloysia_citriodora_002.jpg",
+							"authorName": "H. Zell",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Llez",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some lemon verbena growing",
+					"recipes": [
+						{
+							"name": "Lemon Verbena-Blueberry Muffins",
+							"url": "https://www.allrecipes.com/recipe/216030/lemon-verbena-blueberry-muffins"
+						},
+						{
+							"name": "Peaches with Lemon Verbena Cream",
+							"url": "https://www.bonappetit.com/recipe/peaches-with-lemon-verbena-cream"
+						},
+						{
+							"name": "Mint Tea with Lemon Verbena",
+							"url": "https://www.simplyrecipes.com/recipes/lemon_verbena_mint_herb_tea"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "lemon beebrush"
+						}
+					]
+				},
+				{
+					"id": "mace",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "onions"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "beef"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "bread"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "dill"
+						}
+					],
+					"description": "The aril - or seed covering - of the nutmeg seed. Prepared as a powder or in strips.",
+					"origin": "Indonesian",
+					"name": "Mace",
+					"emoji": "1F331",
+					"species": "Myristica fragrans",
+					"relatedSpices": [
+						{
+							"id": "garam_masala"
+						},
+						{
+							"id": "nutmeg"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Mace",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Mace_(%E0%A6%9C%E0%A6%AF%E0%A6%BC%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF).JPG",
+							"authorName": "Atudu",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Atudu",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "Some slices of mace",
+					"recipes": [
+						{
+							"name": "Sixteenth Century Orange Chicken",
+							"url": "https://www.allrecipes.com/recipe/20411/sixteenth-century-orange-chicken"
+						},
+						{
+							"name": "Pumpkin Ravioli with Hazelnut Cream Sauce",
+							"url": "https://www.allrecipes.com/recipe/11826/pumpkin-ravioli-with-hazelnut-cream-sauce"
+						},
+						{
+							"name": "Chocolate Chip Cookies",
+							"url": "https://www.allrecipes.com/recipe/26104/a-to-z-everything-but-the-kitchen-sink-chocolate-chip-cookies"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "marjoram",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 9
+						}
+					],
+					"foods": [
+						{
+							"food": "potato"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "mushroom"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "salad_dressing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "winter_savory"
+						}
+					],
+					"description": "Lovely leaves that are similar to oregano, but sweeter.",
+					"origin": "Mediterranean",
+					"name": "Marjoram",
+					"emoji": "1F33F",
+					"species": "Origanum majorana",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						},
+						{
+							"id": "oregano"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Marjoram flowers",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Marjoram_flowers.jpg",
+							"authorName": "SKsiddhartthan",
+							"authorURL": "https://commons.wikimedia.org/w/index.php?title=User:Sksiddhartthan",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "Flowers of the marjoram plant",
+					"recipes": [
+						{
+							"name": "Pork Rib Stew with Sage Cornmeal Dumplings",
+							"url": "https://www.allrecipes.com/recipe/89257/pork-rib-stew-with-sage-cornmeal-dumplings"
+						},
+						{
+							"name": "Chicken Manicotti Alfredo",
+							"url": "https://www.allrecipes.com/recipe/12069/chicken-manicotti-alfredo"
+						},
+						{
+							"name": "Maple Roast Turkey",
+							"url": "https://www.allrecipes.com/recipe/13675/maple-roast-turkey"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "sweet marjoram"
+						}
+					]
+				},
+				{
+					"id": "mint",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 10
+						}
+					],
+					"foods": [
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "melon"
+						},
+						{
+							"food": "peas"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "fruit_sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "lemon_verbena"
+						},
+						{
+							"id": "chives"
+						}
+					],
+					"description": "The good sweet leaves that you can brush your teeth with.",
+					"origin": "Worldwide",
+					"name": "Mint",
+					"emoji": "1F33F",
+					"species": "Mentha",
+					"relatedSpices": [],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "CSA-Chocolate-Mint",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:CSA-Chocolate-Mint.jpg",
+							"authorName": "Evan-Amos",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Evan-Amos",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "A bundle of chocolate mint",
+					"recipes": [
+						{
+							"name": "Grilled Lamb with Mint Orange Sauce",
+							"url": "https://www.allrecipes.com/recipe/247363/chef-johns-grilled-lamb-with-mint-orange-sauce"
+						},
+						{
+							"name": "Mint Chutney",
+							"url": "https://www.allrecipes.com/recipe/83221/mint-chutney"
+						},
+						{
+							"name": "Lemon Mint Iced Tea",
+							"url": "https://www.allrecipes.com/recipe/217166/lemon-mint-iced-tea"
+						},
+						{
+							"name": "Cucumber Raita",
+							"url": "https://www.allrecipes.com/recipe/105046/cucumber-raita"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "mustard",
+					"flavors": [
+						{
+							"flavor": 5
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "beef"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "dry_rub"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "fenugreek"
+						}
+					],
+					"description": "Seeds that can be grinded to create a familiar condiment.",
+					"origin": "Mediterranean",
+					"name": "Mustard",
+					"emoji": "1F331",
+					"species": "Sinapis alba",
+					"relatedSpices": [],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Mustard",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Mustard.png",
+							"authorName": "Novalis",
+							"authorURL": "https://en.wikipedia.org/wiki/User:Novalis",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some mustard seeds",
+					"recipes": [
+						{
+							"name": "Cauliflower with Melted Onions and Mustard Seeds",
+							"url": "https://www.foodandwine.com/recipes/cauliflower-with-melted-onions-and-mustard-seeds"
+						},
+						{
+							"name": "Indian Potatoes with Black and Yellow Mustard Seeds",
+							"url": "https://www.myrecipes.com/recipe/indian-potatoes"
+						},
+						{
+							"name": "Dijon Mustard",
+							"url": "https://foodwishes.blogspot.com/2015/01/hello-its-chef-dijon-from-foodwishescom.html"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "nutmeg",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "cabbage"
+						},
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "stuffing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "vanilla"
+						}
+					],
+					"description": "The dried seeds of the nutmeg tree.",
+					"origin": "Indonesian",
+					"name": "Nutmeg",
+					"emoji": "1F347",
+					"species": "Myristica fragrans",
+					"relatedSpices": [
+						{
+							"id": "mace"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Muscade",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Muscade.jpg",
+							"authorName": "Nataraja",
+							"authorURL": "https://fr.wikipedia.org/wiki/Utilisateur:Nataraja",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "Some nutmeg seeds",
+					"recipes": [
+						{
+							"name": "Sweet Potato Muffins",
+							"url": "https://www.allrecipes.com/recipe/245442/chef-johns-sweet-potato-muffins"
+						},
+						{
+							"name": "Baked Stuffed Pumpkin",
+							"url": "https://www.allrecipes.com/recipe/13657/baked-stuffed-pumpkin"
+						},
+						{
+							"name": "Grilled Jamaican Jerked Pork Loin Chops",
+							"url": "https://www.allrecipes.com/recipe/108197/grilled-jamaican-jerked-pork-loin-chops"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "oregano",
+					"flavors": [
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "artichoke"
+						},
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "mushroom"
+						},
+						{
+							"food": "olive"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "zucchini"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "tomato_sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "sesame_seeds"
+						},
+						{
+							"id": "sumac"
+						}
+					],
+					"description": "Tasty leaves used heavily in Italian-American cuisine.",
+					"origin": "Mediterranean",
+					"name": "Oregano",
+					"emoji": "1F33F",
+					"species": "Origanum vulgare",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "zaatar"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Oregano",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Oregano_(%E0%A6%85%E0%A6%B0%E0%A7%87%E0%A6%97%E0%A6%BE%E0%A6%A8%E0%A7%8B).JPG",
+							"authorName": "Atudu",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Atudu",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "What's better than this? Dried oregano.",
+					"recipes": [
+						{
+							"name": "Chimichurri",
+							"url": "https://www.allrecipes.com/recipe/236375/chef-johns-chimichurri-sauce"
+						},
+						{
+							"name": "Baked Tomatoes Oregano",
+							"url": "https://www.allrecipes.com/recipe/25243/baked-tomatoes-oregano"
+						},
+						{
+							"name": "Minestrone",
+							"url": "https://www.allrecipes.com/recipe/100218/corrigans-minestrone"
+						},
+						{
+							"name": "Albondigas",
+							"url": "https://www.allrecipes.com/recipe/245585/turkey-and-rice-meatballs-albondigas"
+						},
+						{
+							"name": "Marinara Sauce",
+							"url": "https://www.allrecipes.com/recipe/26293/simple-marinara-sauce"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "wild marjoram"
+						}
+					]
+				},
+				{
+					"id": "paprika",
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "bell_pepper"
+						},
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "shellfish"
+						},
+						{
+							"food": "tofu"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "salad_dressing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "chili_powder"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "summer_savory"
+						}
+					],
+					"description": "Red peppies - like bell peppers - dried and ground up. Can be smoked or sweet.",
+					"origin": "Mexican",
+					"name": "Paprika",
+					"emoji": "1F336",
+					"species": "Capsicum annuum",
+					"relatedSpices": [
+						{
+							"id": "cajun_seasoning"
+						},
+						{
+							"id": "chili_powder"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Spanishsmokedpaprika",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Spanishsmokedpaprika.jpg",
+							"authorName": "Badagnani",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Badagnani",
+							"licenseName": "CC BY 3.0"
+						}
+					],
+					"imgDesc": "A bowl of smoked paprika",
+					"recipes": [
+						{
+							"name": "Shakshouka",
+							"url": "https://www.allrecipes.com/recipe/245362/chef-johns-shakshuka"
+						},
+						{
+							"name": "Hungarian Mushroom Soup",
+							"url": "https://www.allrecipes.com/recipe/17897/hungarian-mushroom-soup"
+						},
+						{
+							"name": "Beef Goulash",
+							"url": "https://www.allrecipes.com/recipe/231009/chef-johns-beef-goulash"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "parsley",
+					"flavors": [
+						{
+							"flavor": 0
+						}
+					],
+					"foods": [
+						{
+							"food": "onions"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "basil"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "tarragon"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "chervil"
+						},
+						{
+							"id": "dill"
+						}
+					],
+					"description": "Some nice leaves to use as a garnish.",
+					"origin": "Mediterranean",
+					"name": "Parsley",
+					"emoji": "1F33F",
+					"species": "Petroselinum crispum",
+					"relatedSpices": [
+						{
+							"id": "chervil"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "coriander_seeds"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Parsley100",
+							"imgURL": "https://en.wikipedia.org/wiki/File:Parsley100.jpg",
+							"authorName": "Tharish",
+							"authorURL": "https://commons.wikimedia.org/w/index.php?title=User:Tharish",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some good ol' parsley leaves",
+					"recipes": [
+						{
+							"name": "Chicken Kiev",
+							"url": "https://www.allrecipes.com/recipe/236703/chef-johns-chicken-kiev"
+						},
+						{
+							"name": "Chimichurri",
+							"url": "https://www.chowhound.com/recipes/argentine-chimichurri-sauce-28393"
+						},
+						{
+							"name": "Hearty Turkey Soup with Parsley Dumplings",
+							"url": "https://www.allrecipes.com/recipe/9145/hearty-turkey-soup-with-parsley-dumplings"
+						},
+						{
+							"name": "Cioppino",
+							"url": "https://www.allrecipes.com/recipe/12816/cioppino"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "ras_el_hanout",
+					"emoji": "1F331",
+					"name": "Ras el hanout",
+					"species": "",
+					"cinnamons": [
+						{
+							"name": "rass el hanout"
+						}
+					],
+					"type": 2,
+					"description": "A spice blend with no definitive recipe, but usually has around 12 different spices in it.",
+					"imgDesc": "A good bowl of ras el hanout",
+					"origin": "North African",
+					"license": [
+						{
+							"imgName": "Ras.el.hanout",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Ras.el.hanout.jpg",
+							"authorName": "Sarefo",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Sarefo",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 5
+						},
+						{
+							"flavor": 9
+						}
+					],
+					"foods": [
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "vegetables"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [],
+					"relatedSpices": [
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "coriander_seeds"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "allspice"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "fenugreek"
+						}
+					],
+					"recipes": []
+				},
+				{
+					"id": "rosemary",
+					"flavors": [
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "apple"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "mushroom"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "peas"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "spinach"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "tea"
+						},
+						{
+							"dish": "stuffing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "winter_savory"
+						}
+					],
+					"description": "Some good leaves for meats and teas.",
+					"origin": "Mediterranean",
+					"name": "Rosemary",
+					"emoji": "1F33F",
+					"species": "Rosmarinus officinalis",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Rosemary",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Rosemary_(%E0%A6%B0%E0%A7%8B%E0%A6%9C%E0%A6%AE%E0%A7%87%E0%A6%B0%E0%A7%80).JPG",
+							"authorName": "Atudu",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Atudu",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"imgDesc": "Dried rosemary leaves",
+					"recipes": [
+						{
+							"name": "Rosemary Pull-Apart Dinner Rolls",
+							"url": "https://www.allrecipes.com/recipe/230749/rosemary-pull-apart-dinner-rolls"
+						},
+						{
+							"name": "Focaccia",
+							"url": "https://foodwishes.blogspot.com/2013/08/focaccia-surprisingly-not-italian-for.html"
+						},
+						{
+							"name": "Turkey Mushrooms",
+							"url": "https://www.allrecipes.com/recipe/219874/italian-turkey-meatballs"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "saffron",
+					"emoji": "1F940",
+					"name": "Saffron",
+					"species": "Crocus sativus",
+					"cinnamons": [],
+					"type": 1,
+					"description": "The dried threads of the Saffron Crocus flower. One of the most expensive spices in the world.",
+					"imgDesc": "Dried saffron threads",
+					"origin": "Mediterranean",
+					"license": [
+						{
+							"imgName": "Safran-Weinviertel Niederreiter 2 Gramm 8285",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Safran-Weinviertel_Niederreiter_2_Gramm_8285.jpg",
+							"authorName": "Hubertl",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Hubertl",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "fish"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "beef"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "rice"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "risotto"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "nutmeg"
+						}
+					],
+					"relatedSpices": [],
+					"recipes": [
+						{
+							"name": "Lamb Tagine",
+							"url": "https://www.allrecipes.com/recipe/105044/lamb-tagine"
+						},
+						{
+							"name": "Saffron Rice",
+							"url": "https://www.allrecipes.com/recipe/24376/saffron-rice"
+						}
+					]
+				},
+				{
+					"id": "sage",
+					"flavors": [
+						{
+							"flavor": 7
+						},
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "apple"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "turkey"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "fruit_sauce"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "stuffing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "winter_savory"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"description": "Some nice savory leaves.",
+					"origin": "Mediterranean",
+					"name": "Sage",
+					"emoji": "1F33F",
+					"species": "Salvia officinalis",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Salvia officinalis in vaso",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Salvia_officinalis_in_vaso.JPG",
+							"authorName": "Petar43",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Petar43",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Some nice sage growing in a pot",
+					"recipes": [],
+					"cinnamons": []
+				},
+				{
+					"id": "sesame_seeds",
+					"emoji": "1F347",
+					"name": "Sesame Seeds",
+					"species": "Sesamum indicum",
+					"cinnamons": [],
+					"type": 1,
+					"description": "One of the oiliest seeds in the world.",
+					"imgDesc": "A bowl of roasted sesame seeds",
+					"origin": "South Asian",
+					"license": [
+						{
+							"imgName": "Chamkkae (sesame)",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Chamkkae_(sesame).jpg",
+							"authorName": "National Institute of Korean Language",
+							"authorURL": "https://krdict.korean.go.kr/",
+							"licenseName": "CC BY-SA 2.5"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "beef"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "vegetables"
+						},
+						{
+							"food": "broccoli"
+						},
+						{
+							"food": "tofu"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread"
+						},
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "rice"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "sumac"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "summer_savory"
+						},
+						{
+							"id": "oregano"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "zaatar"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Sesame Beef",
+							"url": "https://www.allrecipes.com/recipe/14679/sesame-beef"
+						},
+						{
+							"name": "Tahini Chicken",
+							"url": "https://www.allrecipes.com/recipe/237303/tahini-chicken"
+						},
+						{
+							"name": "Sesame Seared Tuna",
+							"url": "https://www.allrecipes.com/recipe/71698/sesame-seared-tuna"
+						}
+					]
+				},
+				{
+					"id": "sichuan_pepper",
+					"emoji": "1F331",
+					"name": "Sichuan Pepper",
+					"species": "Zanthoxylum simulans",
+					"type": 1,
+					"description": "Seed husks that are very different from black peppercorns. The seeds themselves are not usually used in food.",
+					"imgDesc": "Pile of peppercorns",
+					"origin": "Chinese",
+					"license": [
+						{
+							"imgName": "Sechuan pepper",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Sechuan_pepper.jpg",
+							"authorName": "Max Ronnersjö",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Maxronnersjo",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 9
+						},
+						{
+							"flavor": 2
+						}
+					],
+					"foods": [
+						{
+							"food": "duck"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "onions"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "rice"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "star_anise"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "garlic_powder"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "five_spice"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Mapo Chicken",
+							"url": "https://www.seriouseats.com/recipes/2013/01/mapo-chicken-recipe.html"
+						},
+						{
+							"name": "Sichuan-Style Hot and Numbing Sliced Turkey",
+							"url": "https://www.seriouseats.com/recipes/2010/11/thanksgiving-leftovers-sichuan-style-hot-and-numbing-sliced-turkey.html"
+						},
+						{
+							"name": "Boiled Beef with Chili",
+							"url": "https://www.seriouseats.com/recipes/2012/06/sichuan-boiled-beef-recipe.html"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "Szechuan pepper"
+						}
+					]
+				},
+				{
+					"id": "star_anise",
+					"emoji": "1F31F",
+					"name": "Star Anise",
+					"species": "Illicium verum",
+					"type": 1,
+					"description": "Unrelated to regular anise. Dry up those fruits and seeds and give 'em a good grind!",
+					"imgDesc": "Star anise fruits and seeds",
+					"origin": "Chinese",
+					"license": [
+						{
+							"imgName": "Dried Star Anise Fruit Seeds",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Dried_Star_Anise_Fruit_Seeds.jpg",
+							"authorName": "Sanjay Acharya",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Sanjay_ach",
+							"licenseName": "CC BY-SA 4.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 0
+						}
+					],
+					"foods": [
+						{
+							"food": "beef"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "duck"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "tomato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "fruit_sauce"
+						},
+						{
+							"dish": "tomato_sauce"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "fennel"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "fenugreek"
+						},
+						{
+							"id": "sichuan_pepper"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "five_spice"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Beef Pho",
+							"url": "https://www.allrecipes.com/recipe/57354/beef-pho"
+						},
+						{
+							"name": "Honey-Glazed Ham",
+							"url": "https://www.allrecipes.com/recipe/240752/chef-johns-honey-glazed-ham"
+						},
+						{
+							"name": "Tangerine Cherry Cranberry Sauce",
+							"url": "https://www.allrecipes.com/recipe/222397/tangerine-cherry-cranberry-sauce"
+						},
+						{
+							"name": "Tea Leaf Eggs",
+							"url": "https://www.allrecipes.com/recipe/51326/chinese-tea-leaf-eggs"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "badiam"
+						}
+					]
+				},
+				{
+					"id": "sumac",
+					"flavors": [
+						{
+							"flavor": 8
+						}
+					],
+					"foods": [
+						{
+							"food": "fish"
+						},
+						{
+							"food": "vegetables"
+						},
+						{
+							"food": "chicken"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "sesame_seeds"
+						}
+					],
+					"description": "Dried fruits from the Sumac tree.",
+					"origin": "Mediterranean",
+					"name": "Sumac",
+					"emoji": "1F347",
+					"species": "Rhus coriaria",
+					"relatedSpices": [
+						{
+							"id": "zaatar"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Sumac",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Sumac.jpg",
+							"authorName": "Webaware",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Webaware",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Sumac... for salad",
+					"recipes": [
+						{
+							"name": "Tomato Lemon Sumac",
+							"url": "https://www.spicemamasf.com/tomato-lemon-sumac"
+						},
+						{
+							"name": "Sumac Chicken Thighs",
+							"url": "https://cookinglsl.com/one-pan-sumac-chicken-thighs/"
+						},
+						{
+							"name": "Grilled Sweet Potato Baba Ghanoush",
+							"url": "https://www.bonappetit.com/recipe/grilled-sweet-potato-baba-ghanoush"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "sumaq"
+						},
+						{
+							"name": "sumach"
+						}
+					]
+				},
+				{
+					"id": "summer_savory",
+					"emoji": "1F33F",
+					"name": "Summer Savory",
+					"species": "Satureja hortensis",
+					"type": 0,
+					"description": "The most commonly used savory in cooking.",
+					"imgDesc": "Summer savory growing",
+					"origin": "Mediterranean",
+					"license": [
+						{
+							"imgName": "Satureja hortensis bgiu",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Satureja_hortensis_bgiu.jpg",
+							"authorName": "Bogdan",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Bogdan",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 6
+						},
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "duck"
+						},
+						{
+							"food": "corn"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "beans"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "paprika"
+						},
+						{
+							"id": "sesame_seeds"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						},
+						{
+							"id": "winter_savory"
+						},
+						{
+							"id": "zaatar"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Summer Savory and Garlic Green Beans",
+							"url": "https://www.lifesambrosia.com/summer-savory-and-garlic-green-beans-recipe/"
+						},
+						{
+							"name": "Marinated Tomatoes with Lemon and Summer Savory",
+							"url": "https://www.myrecipes.com/recipe/marinated-tomatoes-with-lemon-summer-savory"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "tarragon",
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "cheese"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "sauce"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "chervil"
+						}
+					],
+					"description": "Some lovely leaves found in France and Russia.",
+					"origin": "Russian",
+					"name": "Tarragon",
+					"emoji": "1F33F",
+					"species": "Artemisia dracunculus",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Dried Taragon",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Dried_Taragon.JPG",
+							"authorName": "KVDP",
+							"authorURL": "https://en.wikipedia.org/wiki/User:Genetics4good",
+							"licenseName": "Public Domain"
+						}
+					],
+					"imgDesc": "Dried tarragon in a lovely jar",
+					"recipes": [
+						{
+							"name": "Lobster Thermidor",
+							"url": "https://www.allrecipes.com/recipe/262161/chef-johns-lobster-thermidor"
+						},
+						{
+							"name": "Tarragon Aioli",
+							"url": "https://www.allrecipes.com/recipe/237826/chef-johns-tarragon-aioli"
+						},
+						{
+							"name": "Grilled Tarragon Mustard Chicken",
+							"url": "https://www.allrecipes.com/recipe/222710/grilled-tarragon-mustard-chicken"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "estragon"
+						}
+					]
+				},
+				{
+					"id": "thyme",
+					"flavors": [
+						{
+							"flavor": 1
+						}
+					],
+					"foods": [
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "green_beans"
+						},
+						{
+							"food": "peas"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "pork"
+						},
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "zucchini"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "salad_dressing"
+						},
+						{
+							"dish": "soup"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "sumac"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "chives"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "sesame_seeds"
+						},
+						{
+							"id": "summer_savory"
+						},
+						{
+							"id": "winter_savory"
+						}
+					],
+					"description": "Lovely leaves that retain their flavor when dried much better than most herbs do.",
+					"origin": "Mediterranean",
+					"name": "Thyme",
+					"emoji": "1F33F",
+					"species": "Thymus vulgaris",
+					"relatedSpices": [
+						{
+							"id": "herbs_de_provence"
+						},
+						{
+							"id": "zaatar"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Thyme-Bundle",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Thyme-Bundle.jpg",
+							"authorName": "Evan-Amos",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Evan-Amos",
+							"licenseName": "CC0 1.0"
+						}
+					],
+					"imgDesc": "It's thyme time",
+					"recipes": [
+						{
+							"name": "Grilled Garlic and Herb Shrimp",
+							"url": "https://www.allrecipes.com/recipe/244245/chef-johns-grilled-garlic-and-herb-shrimp"
+						},
+						{
+							"name": "Quiche Lorraine",
+							"url": "https://www.allrecipes.com/recipe/223196/chef-johns-quiche-lorraine"
+						},
+						{
+							"name": "Cheddar-Thyme Flaky Biscuits",
+							"url": "https://www.allrecipes.com/recipe/150986/cheddar-thyme-flaky-biscuits"
+						},
+						{
+							"name": "Lemon Thyme Rice",
+							"url": "https://www.allrecipes.com/recipe/31540/lemon-thyme-rice"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "turmeric",
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 2
+						}
+					],
+					"foods": [
+						{
+							"food": "cabbage"
+						},
+						{
+							"food": "beans"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lentils"
+						},
+						{
+							"food": "tofu"
+						},
+						{
+							"food": "cauliflower"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "sweet_potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "curry"
+						},
+						{
+							"dish": "rice"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "garlic_powder"
+						},
+						{
+							"id": "black_pepper"
+						},
+						{
+							"id": "cumin"
+						}
+					],
+					"description": "Tasty root powder. Makes food take on a lovely yellow color if you use too much like I always do.",
+					"origin": "South Asian",
+					"name": "Turmeric",
+					"emoji": "1F331",
+					"species": "Curcuma longa",
+					"relatedSpices": [
+						{
+							"id": "curry_powder"
+						}
+					],
+					"type": 1,
+					"license": [
+						{
+							"imgName": "Curcuma longa roots",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Curcuma_longa_roots.jpg",
+							"authorName": "Simon A. Eugster",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:LivingShadow",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Turmeric in root and powder form",
+					"recipes": [
+						{
+							"name": "Peanut Curry Chicken",
+							"url": "https://www.allrecipes.com/recipe/244979/chef-johns-peanut-curry-chicken"
+						},
+						{
+							"name": "Chicken Tikka Masala",
+							"url": "https://www.allrecipes.com/recipe/228446/authentic-chicken-tikka-masala"
+						},
+						{
+							"name": "Ginger-Turmeric Herbal Tea",
+							"url": "https://www.allrecipes.com/recipe/242148/ginger-turmeric-herbal-tea"
+						},
+						{
+							"name": "Turmeric Milk",
+							"url": "https://www.allrecipes.com/recipe/244623/turmeric-milk"
+						},
+						{
+							"name": "Butter Lamb Gravy",
+							"url": "https://www.allrecipes.com/recipe/150812/butter-lamb-gravy"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "vanilla",
+					"emoji": "1F368",
+					"name": "Vanilla",
+					"species": "Vanilla planifolia",
+					"type": 0,
+					"description": "Dried fruits from the vanilla tree. Not actually beans.",
+					"imgDesc": "Six vanilla fruit pods",
+					"origin": "Mexican",
+					"license": [
+						{
+							"imgName": "Vanilla 6beans",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Vanilla_6beans.JPG",
+							"authorName": "B.navez",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:B.navez",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 6
+						}
+					],
+					"foods": [
+						{
+							"food": "citrus"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "dessert"
+						},
+						{
+							"dish": "tea"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "cinnamon"
+						},
+						{
+							"id": "nutmeg"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "lemon_verbena"
+						}
+					],
+					"relatedSpices": [],
+					"recipes": [
+						{
+							"name": "Vanilla Crepes",
+							"url": "https://www.allrecipes.com/recipe/95817/vanilla-crepes"
+						},
+						{
+							"name": "Vanilla Ice Cream",
+							"url": "https://www.allrecipes.com/recipe/233928/how-to-make-vanilla-ice-cream"
+						},
+						{
+							"name": "Pastry Cream",
+							"url": "https://www.allrecipes.com/recipe/76043/pastry-cream"
+						},
+						{
+							"name": "Chocolate Chip Cookies",
+							"url": "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies"
+						},
+						{
+							"name": "Waffles",
+							"url": "https://www.allrecipes.com/recipe/22180/waffles-i"
+						}
+					],
+					"cinnamons": []
+				},
+				{
+					"id": "white_pepper",
+					"emoji": "1F331",
+					"name": "White Pepper",
+					"species": "Piper nigrum",
+					"cinnamons": [],
+					"type": 1,
+					"description": "The ripe fruit seeds of the peppercorn plant.",
+					"imgDesc": "A nice diamond of white peppercorns.",
+					"origin": "Sout Asian",
+					"license": [
+						{
+							"imgName": "White pepper whole",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:White_pepper_whole.JPG",
+							"authorName": "Miansari66",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Miansari66",
+							"licenseName": "Public Domain"
+						}
+					],
+					"flavors": [
+						{
+							"flavor": 5
+						},
+						{
+							"flavor": 2
+						}
+					],
+					"foods": [
+						{
+							"food": "onions"
+						},
+						{
+							"food": "tomato"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "potato"
+						},
+						{
+							"food": "olive_oil"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "dry_rub"
+						},
+						{
+							"dish": "marinade"
+						},
+						{
+							"dish": "pasta"
+						},
+						{
+							"dish": "risotto"
+						},
+						{
+							"dish": "salad_dressing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "parsley"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "cumin"
+						},
+						{
+							"id": "oregano"
+						},
+						{
+							"id": "cayenne"
+						},
+						{
+							"id": "ginger"
+						},
+						{
+							"id": "basil"
+						},
+						{
+							"id": "cardamom"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "coriander"
+						},
+						{
+							"id": "cloves"
+						},
+						{
+							"id": "turmeric"
+						},
+						{
+							"id": "dill"
+						},
+						{
+							"id": "mace"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "mustard"
+						},
+						{
+							"id": "star_anise"
+						}
+					],
+					"relatedSpices": [
+						{
+							"id": "black_pepper"
+						}
+					],
+					"recipes": [
+						{
+							"name": "Pfeffernusse",
+							"url": "https://www.allrecipes.com/recipe/9822/pfeffernusse"
+						},
+						{
+							"name": "Macaroni and Cheese",
+							"url": "https://www.allrecipes.com/recipe/219166/chef-johns-macaroni-and-cheese"
+						},
+						{
+							"name": "Eggs Benedict",
+							"url": "https://www.allrecipes.com/recipe/17205/eggs-benedict"
+						}
+					]
+				},
+				{
+					"id": "winter_savory",
+					"flavors": [
+						{
+							"flavor": 5
+						},
+						{
+							"flavor": 1
+						},
+						{
+							"flavor": 0
+						}
+					],
+					"foods": [
+						{
+							"food": "beans"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "turkey"
+						},
+						{
+							"food": "fish"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "soup"
+						},
+						{
+							"dish": "sauce"
+						},
+						{
+							"dish": "stuffing"
+						}
+					],
+					"pairsWith": [
+						{
+							"id": "basil"
+						},
+						{
+							"id": "bay_leaf"
+						},
+						{
+							"id": "marjoram"
+						},
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "rosemary"
+						},
+						{
+							"id": "sage"
+						}
+					],
+					"description": "You can actually grow it in non-winter seasons, so its name is a bit deceiving.",
+					"origin": "Mediterranean",
+					"name": "Winter Savory",
+					"emoji": "1F33F",
+					"species": "Satureja montana",
+					"relatedSpices": [
+						{
+							"id": "summer_savory"
+						}
+					],
+					"type": 0,
+					"license": [
+						{
+							"imgName": "Satureja montana2",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:Satureja_montana2.jpg",
+							"authorName": "Kurt Stüber",
+							"authorURL": "http://www.kurtstueber.de/",
+							"licenseName": "CC BY-SA 3.0"
+						}
+					],
+					"imgDesc": "Wild winter savory",
+					"recipes": [
+						{
+							"name": "Barbecued Anglerfish with Winter Savory",
+							"url": "https://backyardpatch.blogspot.com/2015/01/winter-savory-herb-of-week.html"
+						},
+						{
+							"name": "Crab Stuffed Mushrooms",
+							"url": "https://www.allrecipes.com/recipe/12751/crab-stuffed-mushrooms"
+						}
+					],
+					"cinnamons": [
+						{
+							"name": "mountain savory"
+						}
+					]
+				},
+				{
+					"id": "zaatar",
+					"flavors": [
+						{
+							"flavor": 0
+						},
+						{
+							"flavor": 7
+						}
+					],
+					"foods": [
+						{
+							"food": "carrot"
+						},
+						{
+							"food": "eggplant"
+						},
+						{
+							"food": "onions"
+						},
+						{
+							"food": "beef"
+						},
+						{
+							"food": "chicken"
+						},
+						{
+							"food": "fish"
+						},
+						{
+							"food": "lamb"
+						},
+						{
+							"food": "squash"
+						},
+						{
+							"food": "sweet_potato"
+						}
+					],
+					"dishes": [
+						{
+							"dish": "bread_dip"
+						},
+						{
+							"dish": "dry_rub"
+						}
+					],
+					"pairsWith": [],
+					"description": "An herb blend that can be combined with olive oil to make a spread.",
+					"origin": "Middle Eastern",
+					"name": "Za'atar",
+					"emoji": "1F331",
+					"species": "",
+					"relatedSpices": [
+						{
+							"id": "thyme"
+						},
+						{
+							"id": "sumac"
+						},
+						{
+							"id": "sesame_seeds"
+						},
+						{
+							"id": "summer_savory"
+						},
+						{
+							"id": "oregano"
+						}
+					],
+					"type": 2,
+					"license": [
+						{
+							"imgName": "ZaatarbyGassan",
+							"imgURL": "https://commons.wikimedia.org/wiki/File:ZaatarbyGassan.jpg",
+							"authorName": "Sjschen",
+							"authorURL": "https://commons.wikimedia.org/wiki/User:Sjschen",
+							"licenseName": "CC BY 3.0"
+						}
+					],
+					"imgDesc": "A pile of za'atar",
+					"recipes": [],
+					"cinnamons": [
+						{
+							"name": "satar"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Spices@flavors",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "5:bitter,earthy,peppery,smokey,savory,spicy,sweet,warm,sour,citrusy,cold",
+					"name": "flavor"
+				}
+			]
+		},
+		{
+			"name": "Foods",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "apple"
+				},
+				{
+					"id": "artichoke"
+				},
+				{
+					"id": "beet"
+				},
+				{
+					"id": "bell_pepper"
+				},
+				{
+					"id": "broccoli"
+				},
+				{
+					"id": "cabbage"
+				},
+				{
+					"id": "carrot"
+				},
+				{
+					"id": "cauliflower"
+				},
+				{
+					"id": "celery"
+				},
+				{
+					"id": "citrus"
+				},
+				{
+					"id": "corn"
+				},
+				{
+					"id": "eggplant"
+				},
+				{
+					"id": "green_beans"
+				},
+				{
+					"id": "melon"
+				},
+				{
+					"id": "mushroom"
+				},
+				{
+					"id": "olive"
+				},
+				{
+					"id": "onions"
+				},
+				{
+					"id": "peas"
+				},
+				{
+					"id": "pear"
+				},
+				{
+					"id": "potato"
+				},
+				{
+					"id": "spinach"
+				},
+				{
+					"id": "squash"
+				},
+				{
+					"id": "sweet_potato"
+				},
+				{
+					"id": "tomato"
+				},
+				{
+					"id": "turnip"
+				},
+				{
+					"id": "zucchini"
+				},
+				{
+					"id": "beans"
+				},
+				{
+					"id": "beef"
+				},
+				{
+					"id": "cheese"
+				},
+				{
+					"id": "chicken"
+				},
+				{
+					"id": "duck"
+				},
+				{
+					"id": "fish"
+				},
+				{
+					"id": "lamb"
+				},
+				{
+					"id": "lentils"
+				},
+				{
+					"id": "pork"
+				},
+				{
+					"id": "shellfish"
+				},
+				{
+					"id": "tofu"
+				},
+				{
+					"id": "turkey"
+				},
+				{
+					"id": "vegetables"
+				},
+				{
+					"id": "olive_oil"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Spices@foods",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:Foods",
+					"name": "food",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "DishTypes",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "bread"
+				},
+				{
+					"id": "bread_dip"
+				},
+				{
+					"id": "curry"
+				},
+				{
+					"id": "dessert"
+				},
+				{
+					"id": "dry_rub"
+				},
+				{
+					"id": "fruit_sauce"
+				},
+				{
+					"id": "marinade"
+				},
+				{
+					"id": "pasta"
+				},
+				{
+					"id": "rice"
+				},
+				{
+					"id": "risotto"
+				},
+				{
+					"id": "salad_dressing"
+				},
+				{
+					"id": "sauce"
+				},
+				{
+					"id": "soup"
+				},
+				{
+					"id": "stir_fry"
+				},
+				{
+					"id": "stuffing"
+				},
+				{
+					"id": "tomato_sauce"
+				},
+				{
+					"id": "tea"
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Spices@dishes",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:DishTypes",
+					"name": "dish",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "Spices@pairsWith",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:Spices",
+					"name": "id",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "Spices@relatedSpices",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:Spices",
+					"name": "id",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "Spices@license",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "imgName",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "imgURL",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "authorName",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "authorURL",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "licenseName",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "Spices@recipes",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "url",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "Spices@cinnamons",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				}
+			]
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}
