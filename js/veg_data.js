@@ -161,7 +161,7 @@ const food = {
             unitPrice: "1.37", rating: 9, restrictions: []
         },
         { brand: "Tofutti", item: "Better than Cream Cheese", date: "2018-01-09", url: "https://tofutti.com/frozen-desserts/better-than-cream-cheese/non-hydrongenated-plain/", 
-            desc: "It lives up to its name. Way better than the standard cream cheese you'd find in a generic grocery store.", 
+            desc: "It lives up to its name. Way better than the standard cream cheese you'd find in a grocery store.", 
             pros: "Flavor is great and it melts and feels like the real thing.", 
             cons: "Possibly less healthy than the real thing, which already isn't very healthy.",
             unitPrice: "0.66", rating: 10, restrictions: ["soy"]

@@ -51,6 +51,7 @@ function LoadCategory(cat) {
             const emoji = categories[cat].emoji, unit = categories[cat].unit;
             $("main .latestReviews").append(GetFoodHTML(template, food, cat, emoji, unit));
         }
+        RenderEmojis();
         return;
     }
     const results = food[cat];
