@@ -172,7 +172,7 @@ function LoadHome() {
     const musicList = Shuffle(allData.music);
     for(let i = 0; i < 10; i++) {
         const song = musicList[i];
-        resultView.append(`<div><span title='${data[song.region].name}'>${GetFlagHTML(song.region, true)}</span> <a href = '${song.url}' target='_blank'>"${song.encoded ? decodeURIComponent(song.name) : song.name}</a></div>`);
+        resultView.append(`<div><span title='${data[song.region].name}'>${GetFlagHTML(song.region, true)}</span> <a href = '${song.url}' target='_blank'>${song.encoded ? decodeURIComponent(song.name) : song.name}</a></div>`);
     }
     location.hash = "";
     RenderEmojis();

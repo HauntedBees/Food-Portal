@@ -12,7 +12,7 @@ const data = {
                   { type: "Dairy", desc: "The yogurt dip unsurprisingly contains yogurt. You the dumplings themselves have no dairy in them." },
                   { type: "Gluten", desc: "Flour is used to make the dough." }
               ],
-              ingredients: ["onion", "beef", "lamb", "garlic", "coriander", "lentil", "tomato paste", "oil", "mint", "yogurt"]
+              ingredients: ["onion", "beef", "lamb", "garlic", "coriander", "lentil", "tomato paste", "oil", "mint", "yogurt", "yoghurt"]
             }, 
             { name: "Afghani Burger", type: "Wrap", url: "https://www.youtube.com/watch?v=DbFMpXrT_TA", date: "2018-05-23",
               img: "afghaniburg1.jpg",
@@ -82,7 +82,7 @@ const data = {
                   { type: "Dairy", desc: "Cheese and yogurt are an integral part of this recipe." },
                   { type: "Gluten", desc: "Flour is used to make a roux." }
               ],
-              ingredients: ["bell pepper", "onion", "feta cheese", "tomato", "chili flakes", "flour", "butter", "greek yogurt", "basil", "oil"]
+              ingredients: ["bell pepper", "onion", "feta cheese", "tomato", "chili flakes", "flour", "butter", "greek yogurt", "basil", "oil", "yoghurt"]
             },
             { name: "Flija", type: "Bread", url: "https://www.myalbanianfood.com/recipe/albanian-flija-pancake/", date: "2018-06-24", 
               img: "flija2.jpg",
@@ -91,7 +91,7 @@ const data = {
                   { type: "Dairy", desc: "Butter is an integral part of this recipe, and yogurt, clotted cream, and sour cream are all recommended." },
                   { type: "Gluten", desc: "Flour is used to make the dough." }
               ],
-              ingredients: ["flour", "water", "butter", "oil", "greek yogurt"]
+              ingredients: ["flour", "water", "butter", "oil", "greek yogurt", "yoghurt"]
             }
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Albania",
@@ -282,26 +282,31 @@ const data = {
             { name: "Tanghetto - Planet Earth", url: "https://www.youtube.com/watch?v=TdJbzE3k-r0" }
         ]
     },
-    /*"AM": { // 2.9m
+    "AM": { // 2.9m
         name: "Armenia", desc: "The Republic of Armenia is a country in Western Asia. It was the first country to adopt Christianity as its official religion.",
         foodURL: "https://en.wikipedia.org/wiki/Armenian_cuisine",
         food: [
-            { name: "Spas" , type: "Soup", url: "http://www.thearmeniankitchen.com/2015/05/spas-madzoon-yogurt-soup-with-grains.html", date: "1990-09-22",
+            { name: "Spas" , type: "Soup", url: "http://www.thearmeniankitchen.com/2015/05/spas-madzoon-yogurt-soup-with-grains.html", date: "2018-09-02",
+              img: "spas.jpg", desc: "Unsurprisingly, this minty yogurt soup tastes a lot like minty yogurt. I have a cold so hopefully eating this will cure me.", 
+              diet: [
+                { type: "Gluten", desc: "This soup contains both flour and wheat." },
+                { type: "Dairy", desc: "The primary ingredient in this soup is Greek yogurt." },
+                { type: "Egg", desc: "This soup contains egg yolk, but it is an optional ingredient that is not included if serving the soup cold." }
+              ],
+              ingredients: ["shelled wheat", "dzedzadz", "farro", "Greek yogurt", "yoghurt", "egg yolk", "flour", "butter", "onion", "mint", "parsley"]
+            }/*,
+            { name: "Eetch" , type: "Salad", url: "https://www.youtube.com/watch?v=cOTVZZ31HpU", date: "1990-09-22",
               img: "", desc: "", 
               diet: [],
               ingredients: []
-            },
-            { name: "Byorek" , type: "Pastry", url: "https://www.youtube.com/watch?v=Os30AdMrvZ0", date: "1990-09-22",
-              img: "", desc: "", 
-              diet: [],
-              ingredients: []
-            }
+            }*/
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Armenia",
         music: [
 
         ]
-    },
+    }/*,
+    // https://en.wikipedia.org/wiki/Zhingyalov_hats for artsakh
     "CV": { // 0.5m
         name: "Cape Verde", desc: "",
         music: [
