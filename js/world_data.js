@@ -155,17 +155,25 @@ const data = {
                 { type: "Egg", desc: "You better believe you're dipping it in eggs, too." }
              ],
              ingredients: ["bread", "milk", "sugar", "cinnamon", "egg", "oil"]
-           },
-             { name: "Cal&ccedil;ot and Romesco", type: "Sauce", url: "https://food52.com/recipes/17161-the-evasive-calcot-and-the-promiscuous-romesco", date: "2018-07-15", 
-               img: "calcot1.jpg",
-               desc: "Incredibly hard and messy to eat. But also delicious. I used Mexican grilling onions, since the internet told me those were close enough to actual cal&ccedil;ots. I also definitely messed up on the Romesco because my version was very chunky and not very saucy. Despite these setbacks, it was still a very tasty dish. Ramen mixed with Romesco and topped with onions is also very delicious.",
-               diet: [
-                { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." },
-                { type: "Nuts", desc: "This recipe uses almonds." },
-                { type: "Gluten", desc: "This recipe contains bread for texture." }
-               ],
-               ingredients: ["green onion", "oil", "bell pepper", "bread", "almond", "sherry vinegar", "garlic"]
-             }
+            },
+            { name: "Cal&ccedil;ot", type: "Vegetable", url: "https://food52.com/recipes/17161-the-evasive-calcot-and-the-promiscuous-romesco", date: "2018-07-15", 
+              img: "calcot1.jpg",
+              desc: "Incredibly hard and messy to eat. But also delicious. I used Mexican grilling onions, since the internet told me those were close enough to actual cal&ccedil;ots.",
+              diet: [
+               { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." }
+              ],
+              ingredients: ["green onion", "oil"]
+            },
+            { name: "Romesco", type: "Sauce", url: "https://food52.com/recipes/17161-the-evasive-calcot-and-the-promiscuous-romesco", date: "2018-07-15", 
+              img: "romesco.jpg",
+              desc: "I definitely messed up on this because my version was very chunky and not very saucy. Despite this, it was still very tasty. Ramen mixed with Romesco and topped with onions is also very delicious.",
+              diet: [
+               { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." },
+               { type: "Nuts", desc: "This recipe uses almonds." },
+               { type: "Gluten", desc: "This recipe contains bread for texture." }
+              ],
+              ingredients: ["oil", "bell pepper", "bread", "almond", "sherry vinegar", "garlic"]
+            }
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Andorra",
         musicNotes: "Music from <a href='{0}'>Andorra</a> is similar to Spanish and French music - especially Catalan music.",
@@ -294,19 +302,47 @@ const data = {
                 { type: "Egg", desc: "This soup contains egg yolk, but it is an optional ingredient that is not included if serving the soup cold." }
               ],
               ingredients: ["shelled wheat", "dzedzadz", "farro", "Greek yogurt", "yoghurt", "egg yolk", "flour", "butter", "onion", "mint", "parsley"]
-            }/*,
-            { name: "Eetch" , type: "Salad", url: "https://www.youtube.com/watch?v=cOTVZZ31HpU", date: "1990-09-22",
-              img: "", desc: "", 
-              diet: [],
-              ingredients: []
-            }*/
+            },
+            { name: "Eetch" , type: "Salad", url: "https://www.youtube.com/watch?v=cOTVZZ31HpU", date: "2018-09-07",
+              img: "eetch.jpg", desc: "A salad made mostly of bulgur wheat. Can be served hot or cold, and it's tasty either way.", 
+              diet: [
+                { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." }
+              ],
+              ingredients: ["bulgur", "onions", "tomato paste", "allspice", "green onions", "parsley", "lemon"]
+            }
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Armenia",
+        music: [
+            { name: "Arame - Ur E", url: "https://www.youtube.com/watch?v=WGxDpaFuZRU" },
+            { name: "Sirusho - I Still Breathe", url: "https://www.youtube.com/watch?v=p8DwcwKIWMY" },
+            { name: "Hay TgheQ - Jaki Juki", url: "https://www.youtube.com/watch?v=-S-MAiFIpT0" },
+            { name: "Reincarnation - Mi Gdal Ser", url: "https://www.youtube.com/watch?v=w0BTtlZMXm8" },
+            { name: "Nemra - Shorts", url: "https://www.youtube.com/watch?v=vnwZH5jBLew" },
+            { name: "Maria Nalbandian - Won't Forgive", url: "https://www.youtube.com/watch?v=M2haDgxS2P4" }
+        ]
+    },
+    "AM-AR": { // 0.2m
+        customFlag: "AM-AR", focusArea: "AM",
+        name: "Artsakh", desc: "The Republic of Artsakh, according to most countries, is part of Azerbaijan. Three other unrecognized countries, as well as various states in the USA recognize it as its own country. Despite technically being part of Azerbaijan, it is predominantly populated by Armenians, and Armenian is the region's official language.",
+        foodURL: "https://armeniadiscovery.com/en/articles/what-to-eat-in-artsakh",
+        food: [
+            { name: "Zhingyalov hats", type: "Wrap", url: "https://foodperestroika.com/2011/10/13/zhingalov-khats-herb-flatbread-from-karabakh/", date: "1990-01-01", 
+                img: "", desc: "",
+                diet: [
+                    { type: "", desc: "" }
+                ],
+                ingredients: []
+            }
+        ], // https://www.desifiesta.com/2018/03/jingalov-hats-zhingyalov-hats-armenian-stuffed-flatbreadstuffed-flatbread-recipes.html
+        // https://heghineh.com/jingalov-hats/
+        musicURL: "https://en.wikipedia.org/wiki/Music_of_Artsakh",
         music: [
 
         ]
     }/*,
-    // https://en.wikipedia.org/wiki/Zhingyalov_hats for artsakh
+
+    //,{ name: "", url: "" }
+
     "CV": { // 0.5m
         name: "Cape Verde", desc: "",
         music: [

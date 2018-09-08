@@ -18,8 +18,18 @@ const foodEmojiMap = {
     "Wrap": "1F959",
     "Bread": "1F35E",
     "Dessert": "1F967",
+    "Salad": "1F957",
     "Sauce": "1F963",
-    "Soup": "1F372"
+    "Soup": "1F372",
+    "Vegetable": "1F955"
+    // Missing Types:
+    // Beverage
+    // Sandwich?
+    // Rice
+    // Curry?
+    // Fried?
+    // Pasta/Noodle
+    // Side dish?
 };
 const GetRegionalChar = chr => String.fromCodePoint(0x1F1E6 - 65 + chr.toUpperCase().charCodeAt(0));
 function RenderEmojis() {
@@ -145,7 +155,7 @@ function GetFoodHTML(food, specRegion, colorCode) {
                     .replace("{type}", food.type.toLowerCase())
                     .replace("{typeIcon}", `<i class='emoji e${foodEmojiMap[food.type]}' title='${food.type}'></i>`)
                     .replace("{regionName}", data[region].name)
-                    .replace("{title}", food.name)
+                    .replace(/\{title\}/g, food.name)
                     .replace("{date}", weirdDate)
                     .replace(/\{img\}/g, food.img)
                     .replace("{text}", food.desc)
@@ -256,7 +266,7 @@ $(function() {
         const emoji = foodEmojiMap[food];
         $dietList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "diet"));
     }
-    const $dishList = $(".filterDishTypes"), dishCategories = ["Bread", "Dessert", "Dumpling", "Pastry", "Sauce", "Soup", "Wrap"];
+    const $dishList = $(".filterDishTypes"), dishCategories = ["Bread", "Dessert", "Dumpling", "Pastry", "Salad", "Sauce", "Soup", "Vegetable", "Wrap"];
     for(let i = 0; i < dishCategories.length; i++) {
         const food = dishCategories[i];
         const emoji = foodEmojiMap[food];

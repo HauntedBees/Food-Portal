@@ -28,6 +28,8 @@
             .card.bg-dessert { background-color: #3F0811 }
             .card.bg-sauce { background-color: #3F140C }
             .card.bg-soup { background-color: #3F3113 }
+            .card.bg-salad { background-color: #083F11 }
+            .card.bg-vegetable { background-color: #3F2A0C }
             .card.bg-match { background-color: #346A34 }
             .card.bg-nomatch { background-color: #6A3434 }
             .cookedDate { float: right; font-style: italic }
@@ -221,13 +223,13 @@
                 <div class="card-header">
                     <a href="#{region}" title="{regionName}">{flag}</a> 
                     <span>{typeIcon}</span> 
-                    <strong><a href="{link}" target="_blank" title="View the recipe">{title}</a></strong>
+                    <strong><a href="{link}" target="_blank" title="Click here to see the recipe!" alt="Click here to see the recipe!">{title} <i class="emoji e1F517"></i></a></strong>
                     <span class="cookedDate">{date}</span>
                 </div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-2 col-5">
-                            <a href="img_world/{img}"><img class="cardimg" src="img_world/{img}" alt="{imgtext}" title="{imgtext}"></a>
+                            <a href="img_world/{img}"><img class="cardimg" src="img_world/{img}" alt="{title}" title="{title}"></a>
                         </div>
                         <div class="col-md-10 col-7">
                             {text}

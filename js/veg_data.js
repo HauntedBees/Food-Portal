@@ -1,11 +1,15 @@
 const categories = {
-    "Milk": {
-        desc: "When it comes to baking and cooking, pretty much any milk substitute's gonna be good enough. Soy milk, coconut milk, whatever. It's gonna work. And when it comes to milking up a beverage like a latte, it's gonna be the same thing. But I'm a milk drinker. I drink whole milk on its own as a beverage. Accompanying meals. On its own. With snacks. Milk. These milk substitutes are evaluated on how close they are to whole fat cow milk in texture and taste. Bonus points will be added if a milk tastes really good, even if it doesn't taste like cow milk. I will not be evaluating any almond milks because I am from California and almonds are water-hogging bastards.",
-        emoji: "1F95B", unit: "qt"
-    },
     "Cheese": {
         desc: "When it comes to cheese, how it reacts when cooked is important. Some cheeses melt. Some get super gooey. Some make great fondue, others make great grilled cheese sandwiches. Vegan cheeses will be graded based on how accurately they mimic real cheese in these ways and in terms of flavor.",
         emoji: "1F9C0", unit: "oz"
+    },
+    "Egg": {
+        desc: "Egg replacements. Ratings will be based on their intended use only (i.e. I'm not going to knock down something made to replace eggs in baking for not being good in omelets and vice versa).",
+        emoji: "1F95A", unit: "oz"
+    },
+    "Milk": {
+        desc: "When it comes to baking and cooking, pretty much any milk substitute's gonna be good enough. Soy milk, coconut milk, whatever. It's gonna work. And when it comes to milking up a beverage like a latte, it's gonna be the same thing. But I'm a milk drinker. I drink whole milk on its own as a beverage. Accompanying meals. On its own. With snacks. Milk. These milk substitutes are evaluated on how close they are to whole fat cow milk in texture and taste. Bonus points will be added if a milk tastes really good, even if it doesn't taste like cow milk. I will not be evaluating any almond milks because I am from California and almonds are water-hogging bastards.",
+        emoji: "1F95B", unit: "qt"
     },
     "Misc. Dairy": {
         desc: "Anything that normally has milk in it, but isn't actually milk. Or cheese. Graded based on accuracy in taste and texture.", 
@@ -22,6 +26,10 @@ const categories = {
     "Misc. Meat": {
         desc: "Imitation meats that either don't fit into the other categories, or vegetarian and vegan foods that are trying to be meat substitutes for no specific kind of meat.",
         emoji: "1F356", unit: "oz"
+    },
+    "Combination": {
+        desc: "Foods that contain different types of fake meats and cheeses or what-have-you. Pre-made dishes that already have multiple ingredients in them.",
+        emoji: "1F372", unit: "package"
     }
 };
 const food = {
@@ -281,6 +289,22 @@ const food = {
             pros: "Cheap.", 
             cons: "Watery. Strong walnut flavor.", 
             unitPrice: "1.00", rating: 3, restrictions: ["nut"]
+        }
+    ],
+    "Combination": [
+        { brand: "Alpha Foods", item: "Beefy Cheddar Pot Pie", date: "2018-09-07", url: "http://alphaplantbased.com/our-food/handheld-pot-pies/", 
+            desc: "I would not be able to tell this wasn't made with real beef, cheese and eggs if you didn't tell me. It wasn't particularly great, but that's just how frozen pot pies are.", 
+            pros: "Tasty fake cheese. Tasty fake beef.", 
+            cons: "The actual pie part wasn't very good. The crust was too dry.",
+            unitPrice: "3.99", rating: 7, restrictions: ["soy", "gluten"]
+        }
+    ],
+    "Egg": [
+        { brand: "Bob's Red Mill", item: "Gluten Free Egg Replacer", date: "2018-02-25", url: "https://www.bobsredmill.com/gluten-free-vegan-egg-replacer.html", 
+            desc: "You can really tell that it's mostly potato starch.", 
+            pros: "Texture is perfect. Cookies baked with this will look and feel just like cookies made with eggs.", 
+            cons: "Flavor is strong. Cookies baked with this will taste like potatoes.",
+            unitPrice: "0.33", rating: 5, restrictions: []
         }
     ],
     "Template": [
