@@ -10,6 +10,8 @@ const foodEmojiMap = {
     "Spicy": "1F336",
     "Vegan": "1F33F",
     "Gluten": "1F35E", 
+    "Fish": "1F41F", 
+    "Soy": "1F331",
     "Nuts": "1F330",
     "Peanuts": "1F95C",
     // Food Types
@@ -260,7 +262,7 @@ $(function() {
         </a>
     </div> 
     <i class='emoji e{0}'></i> {1}</li>`;
-    const $dietList = $(".filterFoodTypes"), dietCategories = ["Dairy", "Egg", "Gluten", "Meat", "Nuts", "Peanuts", "Spicy", "Vegan"]; 
+    const $dietList = $(".filterFoodTypes"), dietCategories = ["Dairy", "Egg", "Fish", "Gluten", "Meat", "Nuts", "Peanuts", "Soy", "Spicy", "Vegan"]; 
     for(let i = 0; i < dietCategories.length; i++) {
         const food = dietCategories[i];
         const emoji = foodEmojiMap[food];
@@ -321,7 +323,7 @@ $(function() {
         colorData[keys[i]] = "#FF0000";
     }
     const count = Math.round(100 * (keys.length / 206));
-    if(count < 5) { // still in the A's
+    if(count < 13) { // still in the A's
         const aCount = Math.round(100 * (keys.length / 13));
         $("#progressBar").css("width", aCount + "%").attr("aria-valuenow", aCount).text(keys.length + "/13 regions starting with 'A'");
     } else {

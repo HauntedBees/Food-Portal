@@ -1,4 +1,36 @@
 const data = {
+    "AB": { // 0.2m
+        customFlag: "GE-AB", focusArea: "GE",
+        name: "Abkhazia", desc: "Abkhazia is, according to Abkhazia, Russia, Venezuela, and a few other countries, its own country, and according to everyone else, it's just the westmost part of Georgia. Russian tourists can visit without even needing a passport!",
+        foodURL: "http://abkhazworld.com/aw/abkhazians/culture/654-abkhazian-cuisine",
+        foodNotes: "It was hard to find out too much information about <a href='{0}'>Abkhazian cuisine</a>, but corn and dairy were common ingredients in the dishes I could find.",
+        food: [
+            { name: "Kystybyi", type: "Bread", url: "http://www.spicingyourlife.in/2016/09/qistibi-flatbread-stuffed-with-potatoes.html", date: "2018-06-01",
+              img: "kystybyi1.jpg",
+              desc: "A milk and flour-based flatbread fried with a mashed potato filling. I generally do not like the texture of mashed potatoes, but they were good in this. I learned the hard way that you cannot easily grate onions in a garlic press without breaking it.",
+              diet: [
+                  { type: "Dairy", desc: "Milk is an integral part of this recipe. You can probably use a vegan milk alternative." },
+                  { type: "Gluten", desc: "Flour is used to make the dough." }
+              ],
+              ingredients: ["flour", "milk", "baking soda", "potato", "butter", "onion"]
+            },
+            { name: "Ajika", type: "Sauce", url: "https://www.saveur.com/red-ajika-recipe", date: "2018-06-01",
+              img: "kystybyi1.jpg",
+              desc: "A spicy salsa made with lots of aromatic ingredients. It went well with the kystybyi and has also proven delicious on other foods like cream cheese rangoons and chicken nuggets.",
+              diet: [
+                  { type: "Spicy", desc: "It's spicy. I only used one habanero in my recipe, so you can make it as mild as you like." },
+                  { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." }
+              ],
+              ingredients: ["toamto", "bell pepper", "chili", "garlic", "marigold", "blue fenugreek", "coriander"]
+            }
+        ],
+        musicURL: "http://abkhazworld.com/aw/multimedia/music",
+        musicNotes: "<a href='{0}'>Abkhazian music</a> was also hard to find. According to one of the few English resources I came across, 'polyphony is a distinctive trait of Abkhazian folk singing.'",
+        music: [
+            { name: "Spotify Playlist", url: "https://open.spotify.com/user/busenurtan38/playlist/0zGMZE3OFZkAXu6UaitHpr?si=aazST0FPRg621sdmHXf93g" },
+            { name: "G%C3%B6khan%20%C5%9Een%20-%20%D0%97%D1%8D%D1%85%D1%83%D1%8D%D0%BAl%D1%83%D1%8D%20%D0%9C%D1%8D%D0%BA%D1%8A%D0%B0%D0%BC%D1%8D%D1%85%D1%8D%D1%80", url: "https://www.youtube.com/watch?v=PV_j5EUHnng", encoded: true }
+        ]
+    },
     "AF": { // 35m
         name: "Afghanistan", desc: "The Islamic Republic of Afghanistan is a South Asian country. The word 'Afghan' refers to its people and culture, while 'Afghani' refers to its currency, but it's also used in the name of the 'Afghani Burger' for some reason.",
         foodURL: "https://en.wikipedia.org/wiki/Afghan_cuisine",
@@ -36,38 +68,6 @@ const data = {
             { name: "Aryana Sayeed - Yaar-e Bamyani", url: "https://www.youtube.com/watch?v=-czdyVBMDa4" },
             { name: "Kabul Dreams - Chill Morghak", url: "https://www.youtube.com/watch?v=TcWxvxnK5hU"/*,
         desc: "Founded in 2008, Kabul Dreams is one of the first rock bands from Afghanistan."*/ }
-        ]
-    },
-    "AB": { // 0.2m
-        customFlag: "GE-AB", focusArea: "GE",
-        name: "Abkhazia", desc: "Abkhazia is, according to Abkhazia, Russia, Venezuela, and a few other countries, its own country, and according to everyone else, it's just the westmost part of Georgia. I am still not sure when the term 'Abkhazian' is appropriate versus the term 'Abkhaz.'",
-        foodURL: "http://abkhazworld.com/aw/abkhazians/culture/654-abkhazian-cuisine",
-        foodNotes: "It was hard to find out too much information about <a href='{0}'>Abkhazian cuisine</a>, but corn and dairy were common ingredients in the dishes I could find.",
-        food: [
-            { name: "Kystybyi", type: "Bread", url: "http://www.spicingyourlife.in/2016/09/qistibi-flatbread-stuffed-with-potatoes.html", date: "2018-06-01",
-              img: "kystybyi1.jpg",
-              desc: "A milk and flour-based flatbread fried with a mashed potato filling. I generally do not like the texture of mashed potatoes, but they were good in this. I learned the hard way that you cannot easily grate onions in a garlic press without breaking it.",
-              diet: [
-                  { type: "Dairy", desc: "Milk is an integral part of this recipe. You can probably use a vegan milk alternative." },
-                  { type: "Gluten", desc: "Flour is used to make the dough." }
-              ],
-              ingredients: ["flour", "milk", "baking soda", "potato", "butter", "onion"]
-            },
-            { name: "Ajika", type: "Sauce", url: "https://www.saveur.com/red-ajika-recipe", date: "2018-06-01",
-              img: "kystybyi1.jpg",
-              desc: "A spicy salsa made with lots of aromatic ingredients. It went well with the kystybyi and has also proven delicious on other foods like cream cheese rangoons and chicken nuggets.",
-              diet: [
-                  { type: "Spicy", desc: "It's spicy. I only used one habanero in my recipe, so you can make it as mild as you like." },
-                  { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." }
-              ],
-              ingredients: ["toamto", "bell pepper", "chili", "garlic", "marigold", "blue fenugreek", "coriander"]
-            }
-        ],
-        musicURL: "http://abkhazworld.com/aw/multimedia/music",
-        musicNotes: "<a href='{0}'>Abkhazian music</a> was also hard to find. According to one of the few English resources I came across, 'polyphony is a distinctive trait of Abkhazian folk singing.'",
-        music: [
-            { name: "Spotify Playlist", url: "https://open.spotify.com/user/busenurtan38/playlist/0zGMZE3OFZkAXu6UaitHpr?si=aazST0FPRg621sdmHXf93g" },
-            { name: "G%C3%B6khan%20%C5%9Een%20-%20%D0%97%D1%8D%D1%85%D1%83%D1%8D%D0%BAl%D1%83%D1%8D%20%D0%9C%D1%8D%D0%BA%D1%8A%D0%B0%D0%BC%D1%8D%D1%85%D1%8D%D1%80", url: "https://www.youtube.com/watch?v=PV_j5EUHnng", encoded: true }
         ]
     },
     "AL": { // 2.8m
@@ -142,7 +142,7 @@ const data = {
     },
     "AD": { // 77.3k
         focusArea: "ES",
-        name: "Andorra", desc: "The Principality of Andorra is a microstate ruled by the French President and also the Spanish Bishop of Urgell. For some reason.",
+        name: "Andorra", desc: "The Principality of Andorra is a microstate ruled by the French President and also the Spanish Bishop of Urgell. For some reason. One of the few countries to never be invaded by the British.",
         foodURL: "https://en.wikipedia.org/wiki/Catalan_cuisine",
         foodNotes: "<a href='{0}'>Andorran cuisine</a> is largely just Catalan cuisine, apparently. I won't question this, as I don't know enough about Spain, Andorra, Catalonia, France, or any of the other things that would make me qualified to do so.",
         food: [
@@ -217,7 +217,7 @@ const data = {
         ]
     },
     "AG": { // 0.1m
-        name: "Antigua and Barbuda", focusArea: "PR", desc: "Antigua and Barbuda consists of two major islands and a bunch of smaller islands. It gained sovreignty from Britain in 1981, but still remains a member of the Commonwealth.",
+        name: "Antigua and Barbuda", focusArea: "PR", desc: "Antigua and Barbuda consists of two major islands and a bunch of smaller islands. It gained sovereignty from Britain in 1981, but still remains a member of the Commonwealth.",
         foodURL: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda_cuisine", 
         food: [
             { name: "Ducana", type: "Dumpling", url: "http://kitchen-tested.com/2011/04/10/antiguan-ducana-and-salt-fish/", date: "2018-08-07",
@@ -322,22 +322,64 @@ const data = {
         ]
     },
     "AM-AR": { // 0.2m
-        customFlag: "AM-AR", focusArea: "AM",
+        customFlag: "AM-AR", focusArea: "AZ",
         name: "Artsakh", desc: "The Republic of Artsakh, according to most countries, is part of Azerbaijan. Three other unrecognized countries, as well as various states in the USA recognize it as its own country. Despite technically being part of Azerbaijan, it is predominantly populated by Armenians, and Armenian is the region's official language.",
         foodURL: "https://armeniadiscovery.com/en/articles/what-to-eat-in-artsakh",
         food: [
-            { name: "Zhingyalov hats", type: "Wrap", url: "https://foodperestroika.com/2011/10/13/zhingalov-khats-herb-flatbread-from-karabakh/", date: "1990-01-01", 
-                img: "", desc: "",
+            { name: "Zhingyalov hats", type: "Wrap", url: "https://heghineh.com/jingalov-hats/", date: "2018-09-09", 
+                img: "hatsOffToYa.jpg", desc: "What happens when you make some dough and fill it with every green food you can find in your kitchen? This. A very tasty herby bread with every flavor in every bite!",
                 diet: [
-                    { type: "", desc: "" }
+                    { type: "Gluten", desc: "Flour is used to make the dough." },                    
+                    { type: "Vegan", desc: "This dish is vegan-friendly without any substitutions." }
                 ],
-                ingredients: []
+                ingredients: ["flour", "spinach", "cilantro", "coriander", "parsley", "basil", "mint", "savory", "green onions"]
+            }, 
+            { name: "Dolma", type: "Vegetable", url: "https://foodwishes.blogspot.com/2015/05/lamb-rice-stuffed-grape-leaves-hours-to.html", date: "2018-09-15", 
+              img: "dolma.jpg", desc: "Although the usual image of a dolma involves grape leaves, they can also be made with fresh vegetables like bell peppers, so I made both varieties. The grape leaf ones were a bit bitter and briney, but otherwise it was all pretty tasty.",
+              diet: [
+                { type: "Meat", desc: "This recipe calls for ground meat. You can use a vegan substitute or just go all-in on the rice and it'll be fine. It also calls for chicken broth, but you can use vegetable broth." },
+                { type: "Nuts", desc: "This recipe uses pine nuts, but they're definitely 100% optional." },
+                { type: "Egg", desc: "This recipe calls for an egg to keep things together, but most recipes I've found don't, so you can probably omit it." }
+              ],
+              ingredients: ["lamb", "long grain rice", "olive oil", "currants", "pine nuts", "cumin", "cinnamon", "oregano", "mint", "egg", "grape leaves", "bell pepper"]
             }
-        ], // https://www.desifiesta.com/2018/03/jingalov-hats-zhingyalov-hats-armenian-stuffed-flatbreadstuffed-flatbread-recipes.html
-        // https://heghineh.com/jingalov-hats/
-        musicURL: "https://en.wikipedia.org/wiki/Music_of_Artsakh",
+        ], 
         music: [
-
+            { name: "Hi Bala - Summer Day", url: "https://www.youtube.com/watch?v=PWySDaci2qo" },
+            { name: "Voices of Artsakh - Pahpanner", url: "https://www.youtube.com/watch?v=MtQHtqnhWmA" }
+        ]
+    },
+    "AU":{ // 25m
+        name: "Australia", desc: "The Commonwealth of Australia is best known for the fact that every wild animal on the mainland will kill you. It was doing great until the British showed up.",
+        foodURL: "https://en.wikipedia.org/wiki/Australian_cuisine",
+        food: [
+            { name: "Meat Pie", type: "Pastry", url: "https://www.thespruceeats.com/aussie-meat-pie-256149", date: "2018-09-16",
+              img: "meatpie.jpg", desc: "Juicy flaky meaty goodness. A perfect pastry. If you want to make the pie crust from scratch, I used <a href='https://www.youtube.com/watch?v=1siW_wm9TnA'>this recipe</a> for the bottom dough and <a href='https://www.youtube.com/watch?v=Dcqk74DP-sw'>this recipe</a> for the top.",
+              diet: [
+                { type: "Meat", desc: "This recipe is mostly beef and beef stock. I used a vegan ground beef substitute and vegan beef-flavored stock without issue." },
+                { type: "Fish", desc: "The filling contains Worcestershire Sauce, which can have anchovies in it. I was able to easily find an anchovy-free bottle in a regular grocery store." },
+                { type: "Gluten", desc: "The pie crust uses a lot of flour." },
+                { type: "Dairy", desc: "The pie crust uses a LOT of butter." },
+                { type: "Soy", desc: "The filling contains Worcestershire Sauce, which often has soy sauce in it." },
+                { type: "Egg", desc: "An egg wash is applied to the top of the pie before baking." }
+              ],
+              ingredients: ["olive oil", "onion", "ground beef", "corn starch", "beef stock", "tomato paste", "worcestershire sauce", "vegetable bouillon", "flour", "butter", "egg"]
+            }/*,
+            { name: "Burger with the Lot", type: "Wrap", url: "https://www.allrecipes.com/recipe/70869/aussie-works-burger/", date: "1990-01-01", 
+              img: "", desc: "",
+              diet: [
+                  { type: "", desc: "" }
+              ],
+              ingredients: []
+            }*/
+        ],
+        musicURL: "https://en.wikipedia.org/wiki/Music_of_Australia",
+        music: [
+            /*{ name: "", url: "" },
+            { name: "", url: "" },
+            { name: "", url: "" },
+            { name: "", url: "" },
+            { name: "", url: "" }*/
         ]
     }/*,
 
