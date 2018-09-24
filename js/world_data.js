@@ -28,7 +28,7 @@ const data = {
         musicNotes: "<a href='{0}'>Abkhazian music</a> was also hard to find. According to one of the few English resources I came across, 'polyphony is a distinctive trait of Abkhazian folk singing.'",
         music: [
             { name: "Spotify Playlist", url: "https://open.spotify.com/user/busenurtan38/playlist/0zGMZE3OFZkAXu6UaitHpr?si=aazST0FPRg621sdmHXf93g" },
-            { name: "G%C3%B6khan%20%C5%9Een%20-%20%D0%97%D1%8D%D1%85%D1%83%D1%8D%D0%BAl%D1%83%D1%8D%20%D0%9C%D1%8D%D0%BA%D1%8A%D0%B0%D0%BC%D1%8D%D1%85%D1%8D%D1%80", url: "https://www.youtube.com/watch?v=PV_j5EUHnng", encoded: true }
+            { name: "G%C3%B6khan%20%C5%9Een%20-%20%D0%97%D1%8D%D1%85%D1%83%D1%8D%D0%BAl%D1%83%D1%8D%20%D0%9C%D1%8D%D0%BA%D1%8A%D0%B0%D0%BC%D1%8D%D1%85%D1%8D%D1%80", url: "https://www.youtube.com/watch?v=PV_j5EUHnng", encoded: true, favorite: true }
         ]
     },
     "AF": { // 35m
@@ -60,14 +60,12 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Afghanistan",
         musicNotes: "The <a href='{0}'>Afghan music</a> I heard was mostly modern pop music, but the thing that stood out most to me was that hard rock or metal influences seemed common, at least compared to the American pop music I'm used to.",
         music: [
-            //{ name: "Spotify Playlist", url: "https://open.spotify.com/user/sahra_tahmass/playlist/11hhDTB84otaCZ2Yl2Lye2?si=ml_5hHi7TzKeeKXB4SEuRQ" },
-            { name: "Habib Qaderi - Aftaw Baraanak", url: "https://www.youtube.com/watch?v=5DCVLFT_Anc" },
             { name: "Aria Band - Dokhtar-e Feshani", url: "https://www.youtube.com/watch?v=4AdHbaVK6Fw" },
-            { name: "Valy - Pashtou Attani", url: "https://www.youtube.com/watch?v=mROQT1dEM6w" },
-            { name: "Black Cats - Jooneh Khodet", url: "https://www.youtube.com/watch?v=D0MLoMFZE9o" },
             { name: "Aryana Sayeed - Yaar-e Bamyani", url: "https://www.youtube.com/watch?v=-czdyVBMDa4" },
-            { name: "Kabul Dreams - Chill Morghak", url: "https://www.youtube.com/watch?v=TcWxvxnK5hU"/*,
-        desc: "Founded in 2008, Kabul Dreams is one of the first rock bands from Afghanistan."*/ }
+            { name: "Black Cats - Jooneh Khodet", url: "https://www.youtube.com/watch?v=D0MLoMFZE9o" },
+            { name: "Habib Qaderi - Aftaw Baraanak", url: "https://www.youtube.com/watch?v=5DCVLFT_Anc" },
+            { name: "Kabul Dreams - Chill Morghak", url: "https://www.youtube.com/watch?v=TcWxvxnK5hU" },
+            { name: "Valy - Pashtou Attani", url: "https://www.youtube.com/watch?v=mROQT1dEM6w", favorite: true }
         ]
     },
     "AL": { // 2.8m
@@ -97,10 +95,10 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Albania",
         musicNotes: "<a href='{0}'>Albanian music</a> is pretty chill. I heard lots of horn sections in pop songs, which is always a good thing. Always.",
         music: [
-            { name: "Ingrit Gjoni ft. Gjeto Luca - Fustani Pika Pika", url: "https://www.youtube.com/watch?v=g8pP7U8_UsA" },
             { name: "The Bloody Foreigners - N'deti", url: "https://www.youtube.com/watch?v=4VGsyzJkFWQ" },
+            { name: "Ermal Fejzullahu ft. Gena - Ajo", url: "https://www.youtube.com/watch?v=QAqyDTbWBSI" },
             { name: "Eugent Bushpepa - Fjalet E Qiririt", url: "https://www.youtube.com/watch?v=FXDX8QurUsk" },
-            { name: "Ermal Fejzullahu ft. Gena - Ajo", url: "https://www.youtube.com/watch?v=QAqyDTbWBSI" }
+            { name: "Ingrit Gjoni ft. Gjeto Luca - Fustani Pika Pika", url: "https://www.youtube.com/watch?v=g8pP7U8_UsA", favorite: true }
         ]
     },
     "DZ": { // 40.6m
@@ -130,14 +128,14 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Algeria",
         musicNotes: "About half of the time I heard an <a href='{0}'>Algerian song</a> that made me go \"oh hell yeah\" it was by Khaled (not to be confused with DJ Khaled). Ra&#239; is the big genre in Algeria, and it is great.",
         music: [
-            { name: "Lim ft. Samira Talianie - Ra&#239;-ka&#239;", url: "https://www.youtube.com/watch?v=q-MCv3TRtZ4" },
+            { name: "Cheb Nadir - Rani raya", url: "https://www.youtube.com/watch?v=yDUd_0Fm8xE" },
             { name: "Dahmane El Harrachi - Hassebni Khoud Krak", url: "https://www.youtube.com/watch?v=SWA9sBXmmtI" },
             { name: "Hamdi Benani - Habit el youm", url: "https://www.youtube.com/watch?v=_g2EHyYFhQ4" },
-            { name: "Khaled - C'est la vie", url: "https://www.youtube.com/watch?v=H7rhMqTQ4WI" },
-            { name: "Souda Massi - Samira Meskina", url: "https://www.youtube.com/watch?v=7kNSXFrxzj8" },
             { name: "Khaled - Aicha", url: "https://www.youtube.com/watch?v=wIsJbDZDNpo" },
+            { name: "Khaled - C'est la vie", url: "https://www.youtube.com/watch?v=H7rhMqTQ4WI", favorite: true },
+            { name: "Lim ft. Samira Talianie - Ra&#239;-ka&#239;", url: "https://www.youtube.com/watch?v=q-MCv3TRtZ4" },
             { name: "Rachid Taha - Barra Barra", url: "https://www.youtube.com/watch?v=Q-nF8ACz4k0" },
-            { name: "Cheb Nadir - Rani raya", url: "https://www.youtube.com/watch?v=yDUd_0Fm8xE" }
+            { name: "Souda Massi - Samira Meskina", url: "https://www.youtube.com/watch?v=7kNSXFrxzj8" }
         ]
     },
     "AD": { // 77.3k
@@ -178,9 +176,9 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Andorra",
         musicNotes: "Music from <a href='{0}'>Andorra</a> is similar to Spanish and French music - especially Catalan music.",
         music: [
+            { name: "Anonymous - Salvem el m&oacute;n", url: "https://www.youtube.com/watch?v=VmiV8bbNjQo", favorite: true },
             { name: "Marta Roure - Jugarem a Estimar-nos", url: "https://www.youtube.com/watch?v=9JDvhww0vjw" },
-            { name: "Persefone - One Of Many...", url: "https://www.youtube.com/watch?v=zX-gDPox-yk" },
-            { name: "Anonymous - Salvem el m&oacute;n", url: "https://www.youtube.com/watch?v=VmiV8bbNjQo" }
+            { name: "Persefone - One Of Many...", url: "https://www.youtube.com/watch?v=zX-gDPox-yk" }
         ]
     },
     "AO": { // 25.7m
@@ -210,10 +208,10 @@ const data = {
         musicNotes: "Music from <a href='{0}'>Angola</a> is Angolan.",
         music: [
             { name: "Ary - Voc&ecirc; me Encangalha", url: "https://www.youtube.com/watch?v=bFP3QnEtdro" },
-            { name: "Tabanka Djaz - Foi Assim", url: "https://www.youtube.com/watch?v=5wHXvtWPdxU" },
+            { name: "Dog Murras ft. Noitre & Dia - Chacule Bum Dance (Magia)", url: "https://www.youtube.com/watch?v=LAL8zDokJVk", favorite: true },
             { name: "Kueno Aionda - Isabel", url: "https://www.youtube.com/watch?v=FIgMPLLDoCA" },
-            { name: "Yola Ara&uacute;jo - Sja Paixona", url: "https://www.youtube.com/watch?v=Fljq8miMrFY" },
-            { name: "Dog Murras ft. Noitre & Dia - Chacule Bum Dance (Magia) ", url: "https://www.youtube.com/watch?v=LAL8zDokJVk" }
+            { name: "Tabanka Djaz - Foi Assim", url: "https://www.youtube.com/watch?v=5wHXvtWPdxU" },
+            { name: "Yola Ara&uacute;jo - Sja Paixona", url: "https://www.youtube.com/watch?v=Fljq8miMrFY" }
         ]
     },
     "AG": { // 0.1m
@@ -241,17 +239,17 @@ const data = {
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Antigua_and_Barbuda", 
         music: [
-            { name: "Ricardo Drue - Walking Dead", url: "https://www.youtube.com/watch?v=0ozzOfiG6GM" },
             { name: "Claudette Peters - Out Deh", url: "https://www.youtube.com/watch?v=JUHTUWyyJcc" },
             { name: "King Short Short - One Day You'll Pay", url: "https://www.youtube.com/watch?v=LvTjj0qBWDk" },
-            { name: "Ricardo Drue - Wi-Fi", url: "https://www.youtube.com/watch?v=M9mspC9wiDQ" }
+            { name: "Ricardo Drue - Walking Dead", url: "https://www.youtube.com/watch?v=0ozzOfiG6GM" },
+            { name: "Ricardo Drue - Wi-Fi", url: "https://www.youtube.com/watch?v=M9mspC9wiDQ", favorite: true }
         ]
     },
     "AR": { // 43m
         name: "Argentina", desc: "The Argentine Republic is the second largest country in South America and the largest Spanish-speaking nation in the world.",
         foodURL: "https://en.wikipedia.org/wiki/Argentine_cuisine",
         food: [
-            { name: "Empanadas Mendocinas", type: "Pastry", url: "https://www.laylita.com/recipes/empanadas-mendocinas/", date: "2018-08-18", 
+            { name: "Empanadas Mendocinas", type: "Pastry", url: "https://www.laylita.com/recipes/empanadas-mendocinas/", date: "2018-08-18", favorite: true,  
               img: "empanadas.jpg", desc: "Delicious. Absolutely delicious. The spice mix for the meat was great. The onions were great. The crunch was great. All great. Five stars.",
               diet: [
                 { type: "Gluten", desc: "Flour is the main ingredient in the dough." },
@@ -279,15 +277,16 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Argentina",
         music: [
             { name: "Bandana - Como Puede Ser", url: "https://www.youtube.com/watch?v=M0hvsENxKtQ" },
-            { name: "Kapanga - La Crudita", url: "https://www.youtube.com/watch?v=qSUUfTDfXiM" },
-            { name: "Yerba Brava - Bastara", url: "https://www.youtube.com/watch?v=mIunvgWMzHk" },
             { name: "La Fanfarria del Capit&aacute;n - Bella Ciao", url: "https://www.youtube.com/watch?v=GribZtF-pBo" },
-            { name: "Illya Kuryaki and the Valderramas - Aguila Amarilla", url: "https://www.youtube.com/watch?v=UT5rA0T08Uk" },
             { name: "Gilda - No me Arrepiento de este Amor", url: "https://www.youtube.com/watch?v=8iUkmnLc1ec" },
-            { name: "Virus - Luna de Miel", url: "https://www.youtube.com/watch?v=XLSR7rqjilU" },
-            { name: "Mercedes Sosa - Todo Cambia", url: "https://www.youtube.com/watch?v=0khKL3tTOTs" },
+            { name: "Illya Kuryaki and the Valderramas - Aguila Amarilla", url: "https://www.youtube.com/watch?v=UT5rA0T08Uk" },
+            { name: "Kapanga - La Crudita", url: "https://www.youtube.com/watch?v=qSUUfTDfXiM" },
             { name: "Machito Ponce - Samantha", url: "https://www.youtube.com/watch?v=lSoViXKoiC0" },
-            { name: "Tanghetto - Planet Earth", url: "https://www.youtube.com/watch?v=TdJbzE3k-r0" }
+            { name: "Mercedes Sosa - Todo Cambia", url: "https://www.youtube.com/watch?v=0khKL3tTOTs" },
+            { name: "Miranda! - Ahora Que Soy Cantante", url: "https://www.youtube.com/watch?v=gY4aXuBkNG4", favorite: true },
+            { name: "Tanghetto - Planet Earth", url: "https://www.youtube.com/watch?v=TdJbzE3k-r0" },
+            { name: "Virus - Luna de Miel", url: "https://www.youtube.com/watch?v=XLSR7rqjilU" },
+            { name: "Yerba Brava - Bastara", url: "https://www.youtube.com/watch?v=mIunvgWMzHk" }
         ]
     },
     "AM": { // 2.9m
@@ -314,11 +313,11 @@ const data = {
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Armenia",
         music: [
             { name: "Arame - Ur E", url: "https://www.youtube.com/watch?v=WGxDpaFuZRU" },
-            { name: "Sirusho - I Still Breathe", url: "https://www.youtube.com/watch?v=p8DwcwKIWMY" },
-            { name: "Hay TgheQ - Jaki Juki", url: "https://www.youtube.com/watch?v=-S-MAiFIpT0" },
-            { name: "Reincarnation - Mi Gdal Ser", url: "https://www.youtube.com/watch?v=w0BTtlZMXm8" },
+            { name: "Hay TgheQ - Jaki Juki", url: "https://www.youtube.com/watch?v=-S-MAiFIpT0", favorite: true },
+            { name: "Maria Nalbandian - Won't Forgive", url: "https://www.youtube.com/watch?v=M2haDgxS2P4" },
             { name: "Nemra - Shorts", url: "https://www.youtube.com/watch?v=vnwZH5jBLew" },
-            { name: "Maria Nalbandian - Won't Forgive", url: "https://www.youtube.com/watch?v=M2haDgxS2P4" }
+            { name: "Reincarnation - Mi Gdal Ser", url: "https://www.youtube.com/watch?v=w0BTtlZMXm8" },
+            { name: "Sirusho - I Still Breathe", url: "https://www.youtube.com/watch?v=p8DwcwKIWMY" }
         ]
     },
     "AM-AR": { // 0.2m
@@ -326,7 +325,7 @@ const data = {
         name: "Artsakh", desc: "The Republic of Artsakh, according to most countries, is part of Azerbaijan. Three other unrecognized countries, as well as various states in the USA recognize it as its own country. Despite technically being part of Azerbaijan, it is predominantly populated by Armenians, and Armenian is the region's official language.",
         foodURL: "https://armeniadiscovery.com/en/articles/what-to-eat-in-artsakh",
         food: [
-            { name: "Zhingyalov hats", type: "Wrap", url: "https://heghineh.com/jingalov-hats/", date: "2018-09-09", 
+            { name: "Zhingyalov hats", type: "Wrap", url: "https://heghineh.com/jingalov-hats/", date: "2018-09-09", favorite: true, 
                 img: "hatsOffToYa.jpg", desc: "What happens when you make some dough and fill it with every green food you can find in your kitchen? This. A very tasty herby bread with every flavor in every bite!",
                 diet: [
                     { type: "Gluten", desc: "Flour is used to make the dough." },                    
@@ -345,7 +344,7 @@ const data = {
             }
         ], 
         music: [
-            { name: "Hi Bala - Summer Day", url: "https://www.youtube.com/watch?v=PWySDaci2qo" },
+            { name: "Hi Bala - Summer Day", url: "https://www.youtube.com/watch?v=PWySDaci2qo", favorite: true },
             { name: "Voices of Artsakh - Pahpanner", url: "https://www.youtube.com/watch?v=MtQHtqnhWmA" }
         ]
     },
@@ -353,7 +352,7 @@ const data = {
         name: "Australia", desc: "The Commonwealth of Australia is best known for the fact that every wild animal on the mainland will kill you. It was doing great until the British showed up.",
         foodURL: "https://en.wikipedia.org/wiki/Australian_cuisine",
         food: [
-            { name: "Meat Pie", type: "Pastry", url: "https://www.thespruceeats.com/aussie-meat-pie-256149", date: "2018-09-16",
+            { name: "Meat Pie", type: "Pastry", url: "https://www.thespruceeats.com/aussie-meat-pie-256149", date: "2018-09-16", favorite: true, 
               img: "meatpie.jpg", desc: "Juicy flaky meaty goodness. A perfect pastry. If you want to make the pie crust from scratch, I used <a href='https://www.youtube.com/watch?v=1siW_wm9TnA'>this recipe</a> for the bottom dough and <a href='https://www.youtube.com/watch?v=Dcqk74DP-sw'>this recipe</a> for the top.",
               diet: [
                 { type: "Meat", desc: "This recipe is mostly beef and beef stock. I used a vegan ground beef substitute and vegan beef-flavored stock without issue." },
@@ -364,22 +363,27 @@ const data = {
                 { type: "Egg", desc: "An egg wash is applied to the top of the pie before baking." }
               ],
               ingredients: ["olive oil", "onion", "ground beef", "corn starch", "beef stock", "tomato paste", "worcestershire sauce", "vegetable bouillon", "flour", "butter", "egg"]
-            }/*,
-            { name: "Burger with the Lot", type: "Wrap", url: "https://www.allrecipes.com/recipe/70869/aussie-works-burger/", date: "1990-01-01", 
-              img: "", desc: "",
+            },
+            { name: "Burger with the Lot", type: "Wrap", url: "https://www.allrecipes.com/recipe/70869/aussie-works-burger/", date: "2018-09-24", 
+              img: "aussieburg.jpg", desc: "If you don't like pineapples, fried eggs, or beetroot, this dish might not be for you. If you dislike all three of those things, then you might be me, and maybe you should go back in time and tell yourself not to make this dish.",
               diet: [
-                  { type: "", desc: "" }
+                { type: "Meat", desc: "It's a hamburger. I used a vegan patty without any issue. Canadian bacon is also a topping on this burger." },
+                { type: "Gluten", desc: "The buns contain gluten." },
+                { type: "Dairy", desc: "Cheese is one of the toppings on this burger." },
+                { type: "Egg", desc: "A fried egg is one of the toppings on this burger. Mayonnaise is one of the optional sauces, but I used a vegan mayo without any issue." }
               ],
-              ingredients: []
-            }*/
+              ingredients: ["ground beef", "onion", "olive oil", "tomato", "lettuce", "beetroot", "cheddar cheese", "pineapple", "mustard", "mayonnaise", "ketchup", "relish", "buns"]
+            }
         ],
         musicURL: "https://en.wikipedia.org/wiki/Music_of_Australia",
         music: [
-            /*{ name: "", url: "" },
-            { name: "", url: "" },
-            { name: "", url: "" },
-            { name: "", url: "" },
-            { name: "", url: "" }*/
+            { name: "A.B. Original - January 26", url: "https://www.youtube.com/watch?v=tZ9qeX4gUeo", favorite: true },
+            { name: "The Avalanches - Frontier Psychiatrist", url: "https://www.youtube.com/watch?v=qLrnkK2YEcE" },
+            { name: "David Hudson - Echoes", url: "https://www.youtube.com/watch?v=frFRIJjwwus" },
+            { name: "NoKTuRNL - Woomera", url: "https://www.youtube.com/watch?v=x2VsUcyrloM" },
+            { name: "Shane Howard ft. Archie Roach - Back to Culture", url: "https://www.youtube.com/watch?v=QtfsgXuArtI" },
+            { name: "The Wiggles - Hot Potato/Fruit Salad", url: "https://www.youtube.com/watch?v=OZ72_mLcNdM" },
+            { name: "Yothu Tindi - Treaty", url: "https://www.youtube.com/watch?v=Jf-jHCdafZY" }
         ]
     }/*,
 

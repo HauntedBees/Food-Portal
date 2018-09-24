@@ -26,7 +26,7 @@ const foodEmojiMap = {
     "Vegetable": "1F955"
     // Missing Types:
     // Beverage
-    // Sandwich?
+    // Sandwich? <-- Wraps for now
     // Rice
     // Curry?
     // Fried?
@@ -156,6 +156,7 @@ function GetFoodHTML(food, specRegion, colorCode) {
                     .replace("{region}", region)
                     .replace("{type}", food.type.toLowerCase())
                     .replace("{typeIcon}", `<i class='emoji e${foodEmojiMap[food.type]}' title='${food.type}'></i>`)
+                    .replace("{favorite}", food.favorite ? `<i class='emoji e1F31F' title='Personal Favorite'></i>` : "")
                     .replace("{regionName}", data[region].name)
                     .replace(/\{title\}/g, food.name)
                     .replace("{date}", weirdDate)
@@ -184,7 +185,7 @@ function LoadHome() {
     const musicList = Shuffle(allData.music);
     for(let i = 0; i < 10; i++) {
         const song = musicList[i];
-        resultView.append(`<div><span title='${data[song.region].name}'>${GetFlagHTML(song.region, true)}</span> <a href = '${song.url}' target='_blank'>${song.encoded ? decodeURIComponent(song.name) : song.name}</a></div>`);
+        resultView.append(`<div><span title='${data[song.region].name}'>${GetFlagHTML(song.region, true)}</span> <a href = '${song.url}' target='_blank'>${song.encoded ? decodeURIComponent(song.name) : song.name}${song.favorite ? " <i class='emoji e1F31F' title='Personal Favorite'></i>" : ""}</a></div>`);
     }
     location.hash = "";
     RenderEmojis();
@@ -214,11 +215,7 @@ function LoadCountry(code) {
     $("main .left > div").html(food);
     const music = "<ul>" + jeff.music.map(m => {
         const name = m.encoded ? decodeURIComponent(m.name) : m.name;
-        if(m.desc === undefined) { // todo: maybe deprecate - I don't think descs are being used
-            return "<li><a href='{0}' target='_blank'>{1}</a></li>".replace("{0}", m.url).replace("{1}", name);
-        } else {
-            return "<li><a href='{0}' target='_blank'>{1}</a>: {2}</li>".replace("{0}", m.url).replace("{1}", name).replace("{2}", m.desc);
-        }
+        return "<li><a href='{0}' target='_blank'>{1} {2}</a></li>".replace("{0}", m.url).replace("{1}", name).replace("{2}", m.favorite ? "<i class='emoji e1F31F' title='Personal Favorite'></i>" : "");
     }).join("") + "</ul>";
     $("main .right > div").html(music);
     RenderEmojis();
