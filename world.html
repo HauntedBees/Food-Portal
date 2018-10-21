@@ -21,11 +21,16 @@
             .foodInf { font-size: 25%; margin: 2px; }
             #foodTypes > .nav-item { padding-bottom: 0 !important; padding-top: 0 !important }
             .foodInf img { width: 8px; height: 8px; margin-top: 4px; pointer-events: none }
+            .letter > li { list-style: none }
+            .letter { padding-left: 10px }
+            .card.bg-beverage { background-color: #3F3F3F }
             .card.bg-dumpling { background-color: #3F3521 }
             .card.bg-pastry { background-color: #3F2A0C }
             .card.bg-wrap { background-color: #3F3123 }
             .card.bg-bread { background-color: #3F2E26 }
             .card.bg-dessert { background-color: #3F0811 }
+            .card.bg-noodle { background-color: #3F3F11 }
+            .card.bg-rice { background-color: #3F3F11 }
             .card.bg-sauce { background-color: #3F140C }
             .card.bg-soup { background-color: #3F3113 }
             .card.bg-salad { background-color: #083F11 }
@@ -46,8 +51,10 @@
                 font-weight: bold;
             }
             .sm-only .countryright > div { margin-top: 20px }
+            .typeCount { font-style: italic }
             .musicMobile div, .musicMobile div div { padding-left: 5px; padding-bottom: 2px }
             .jvectormap-tip { z-index: 1000 }
+            .justMeThanks { cursor: pointer }
         </style>
     </head>
     <body class="bg-dark text-white">
@@ -65,18 +72,18 @@
             <div id="moreInfo" class="navbar-brand col-sm-12 sm-only" style="display:none">
                 <input id="searchboxmobile" class="form-control form-control-dark" type="text" placeholder="Search and Filter" aria-label="Search">
                 <div class="sidebar-sticky">
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
-                        <span>Countries</span>
-                    </h6>
-                    <ul class="filterCountries nav flex-column"></ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
-                        <span>Ingredients</span> <span class="clearIngredients badge badge-secondary">Clear Filters</span>
-                    </h6>
-                    <ul class="filterFoodTypes nav flex-column mb-2"></ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
-                        <span>Dishes</span> <span class="clearDishes badge badge-secondary">Clear Filters</span>
-                    </h6>
-                    <ul class="filterDishTypes nav flex-column mb-2"></ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <span>Countries</span> <a class="badge badge-secondary mobileSearchExpand" data-open="0" data-for="filterCountries"><i class="emoji e2795"></i></a>
+                    </h5>
+                    <ul class="filterCountries nav flex-column inner" style="display:none"></ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <span>Ingredients</span> <span class="clearIngredients badge badge-secondary">Clear Filters</span> <a class="badge badge-secondary mobileSearchExpand" data-open="0" data-for="filterFoodTypes"><i class="emoji e2795"></i></a>
+                    </h5>
+                    <ul class="filterFoodTypes nav flex-column mb-2 inner" style="display:none"></ul>
+                    <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <span>Dishes</span> <span class="clearDishes badge badge-secondary">Clear Filters</span> <a class="badge badge-secondary mobileSearchExpand" data-open="0" data-for="filterDishTypes"><i class="emoji e2795"></i></a>
+                    </h5>
+                    <ul class="filterDishTypes nav flex-column mb-2 inner" style="display:none"></ul>
                 </div>
             </div>
         </nav>
@@ -85,17 +92,17 @@
                 <nav class="col-md-2 d-none d-md-block sidebar">
                     <div class="sidebar-sticky">
                         <div id="world-map"></div>
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
                             <span>Countries</span>
-                        </h6>
+                        </h5>
                         <ul class="filterCountries nav flex-column"></ul>
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
                             <span>Ingredients</span> <span class="clearIngredients badge badge-secondary">Clear Filters</span>
-                        </h6>
+                        </h5>
                         <ul class="filterFoodTypes nav flex-column mb-2"></ul>
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
+                        <h5 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-white-50">
                             <span>Dishes</span> <span class="clearDishes badge badge-secondary">Clear Filters</span>
-                        </h6>
+                        </h5>
                         <ul class="filterDishTypes nav flex-column mb-2"></ul>
                     </div>
                 </nav>
@@ -107,8 +114,9 @@
         </div>
         <div id="textTemplates" style="display:none">
             <div id="welcomeMessage">
-                <h4 class="px-3 mt-4 mb-1">Areund the World v1.3</h1>
-                <hr>
+                <h4 class="px-3 mt-4 mb-1 hide-sm" title="Areund the World v1.5">Areund the World</h1>
+                <hr class="hide-sm">
+                <br class="sm-only">
                 <p class="px-4">Hello and welcome! For some reason I decided it would be a good idea to make foods and listen to music from around the world, 
                     and thanks to the internet and blogosphere technology, you can follow along!
                 </p>
@@ -118,6 +126,9 @@
                 </p>
                 <p class="px-4">With that said, have fun! Click areund on the filters to find stuff, or search by recipe name or ingredient in the search box! If you just 
                 want to see every food that matches your filters, just go into the search box and hit Enter without typing anything!</p>
+                <div class="progress" style="margin-bottom:20px">
+                    <div id="progressBar2" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">a</div>
+                </div>
                 <div class="progress" style="margin-bottom:20px">
                     <div id="progressBar" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">a</div>
                 </div>
@@ -161,7 +172,38 @@
             <div id="countryView">
                 <h4 class="country-name px-3 mt-4 mb-1">Country Name</h4>
                 <hr>
-                <div class="country-desc px-4"></div><br><br>
+                <div class="country-desc px-4"></div>
+                <div class="row">
+                    <div class="col-12 sm-only">
+                        <ul>
+                            <li><strong>Population:</strong> <span class="population">0</span></li>
+                            <li><strong>Area:</strong> <span class="area">0</span>km&sup2;</li>
+                            <li><strong>Independence (from <span class="indFrom"></span>):</strong> <span class="independence">1992</span></li>
+                            <li><strong>Demonym:</strong> <span class="demonym">People</span></li>
+                            <li><strong>Currency:</strong> <span class="currency">Turnips</span></li>
+                            <li><strong>Languages:</strong> <span class="languages">Gurgling</span></li>
+                            <li><strong>Motto:</strong> <span class="motto">Eat Your Beets!</span></li>
+                            <li><strong>Neighbors:</strong> <span class="neighbors">Texas</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 hide-sm">
+                        <ul>
+                            <li><strong>Population:</strong> <span class="population">0</span></li>
+                            <li><strong>Area:</strong> <span class="area">0</span>km&sup2;</li>
+                            <li><strong>Independence (from <span class="indFrom"></span>):</strong> <span class="independence">1992</span></li>
+                            <li><strong>Motto:</strong> <span class="motto">Eat Your Beets!</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 hide-sm">
+                        <ul>
+                            <li><strong>Demonym:</strong> <span class="demonym">People</span></li>
+                            <li><strong>Currency:</strong> <span class="currency">Turnips</span></li>
+                            <li><strong>Languages:</strong> <span class="languages">Gurgling</span></li>
+                            <li><strong>Neighbors:</strong> <span class="neighbors">Texas</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <br><br>
                 <div class="container-fluid">
                     <div class="row hide-sm">
                         <div class="left countryinfo col-8">

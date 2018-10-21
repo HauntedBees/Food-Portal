@@ -92,6 +92,12 @@ const food = {
         }
     ],
     "Beef": [
+        { brand: "Gardein", item: "Beefless Tips", date: "2018-09-29", url: "https://www.gardein.com/products/beefless-tips/", 
+            desc: "Little beefy chunks. They look and feel like beef on the outside, and while the insides are very nice and chewy, you can definitely feel that it ain't real meat. Very tasty despite this.", 
+            pros: "Works as a great substitute for stewing meat in goulash. Flavor is meaty.", 
+            cons: "Texture is meat-ish, but definitely not like real meat.",
+            unitPrice: "0.55", rating: 7.5, restrictions: ["soy", "gluten"]
+        },
         { brand: "Gardein", item: "Beefless Sliders", date: "2018-01-03", url: "https://www.gardein.com/products/beefless-slider/", 
             desc: "Compared to White Castle brand frozen sliders, they're pretty accurate. Downside is they don't come with any cheese or anything and heating them takes multiple steps.", 
             pros: "Tastes just as good as any other frozen beef sliders.", 
@@ -215,6 +221,12 @@ const food = {
             pros: "It isn't BAD.", 
             cons: "It isn't GOOD, either.",
             unitPrice: "0.5", rating: 5, restrictions: ["gluten"]
+        },
+        { brand: "Field Roast", item: "Creamy Mac 'n Chao", date: "2018-10-02", url: "https://fieldroast.com/product/mac-n-chao/", 
+            desc: "Tastes and feels like real macaroni and cheese. Pretty tasty. But it doesn't make me feel like I just ate a bowl full of dreams afterwards.", 
+            pros: "Flavor and texture are completely accurate.", 
+            cons: "It's just like real macaroni, but it's not like real GREAT macaroni. A bit pricey.",
+            unitPrice: "0.57", rating: 9, restrictions: ["soy", "gluten"]
         }
     ],
     "Milk": [

@@ -14,6 +14,7 @@ const foodEmojiMap = {
     "Soy": "1F331",
     "Nuts": "1F330",
     "Peanuts": "1F95C",
+    "Alcohol": "1F377",
     // Food Types
     "Dumpling": "1F95F",
     "Pastry": "1F950",
@@ -23,14 +24,14 @@ const foodEmojiMap = {
     "Salad": "1F957",
     "Sauce": "1F963",
     "Soup": "1F372",
-    "Vegetable": "1F955"
+    "Vegetable": "1F955",
+    "Beverage": "1F379",
+    "Noodle": "1F35D",
+    "Rice": "1F35A"
     // Missing Types:
-    // Beverage
     // Sandwich? <-- Wraps for now
-    // Rice
     // Curry?
     // Fried?
-    // Pasta/Noodle
     // Side dish?
 };
 const GetRegionalChar = chr => String.fromCodePoint(0x1F1E6 - 65 + chr.toUpperCase().charCodeAt(0));
@@ -88,6 +89,12 @@ function Shuffle(arr) {
     return arr;
 }
 function ScrollTop() { document.body.scrollTop = document.documentElement.scrollTop = 0; }
+function GetFormattedDate(date) {
+    const d = new Date(date);
+    if(isNaN(d)) { return date; }
+    const dShifted = new Date(d.getTime() - d.getTimezoneOffset() * -60000);
+    return dShifted.toLocaleDateString("en-GB", dateOptions);
+}
 
 /* Filters and Searching */
 const HasFilters = () => (dietPlusFilters.length + dietMinusFilters.length + dishPlusFilters.length + dishMinusFilters.length) > 0;
@@ -144,13 +151,8 @@ function IsSearchMatch(food, query) {
 /* Template Population */
 function GetFoodHTML(food, specRegion, colorCode) {
     const template = $("#template").html();
-    const emojiHTML = food.diet.map(diet => `<li class='nav-item'><i class='emoji e${foodEmojiMap[diet.type]}'></i> ${diet.desc}</li>`).join("");
-    let weirdDate = "TBD";
-    if(food.date !== "") {
-        weirdDate = new Date(food.date);
-        weirdDate = new Date(weirdDate.getTime() - weirdDate.getTimezoneOffset() * -60000);
-        weirdDate = weirdDate.toLocaleDateString("en-GB", dateOptions);
-    }
+    const emojiHTML = food.diet.map(diet => `<li class='nav-item'><i title='Contains ${diet.type}' class='emoji e${foodEmojiMap[diet.type]}'></i> ${diet.desc}</li>`).join("");
+    const formattedDate = food.date === "" ? "TBD" : GetFormattedDate(food.date);
     const region = specRegion || food.region;
     let html = template.replace("{flag}", GetFlagHTML(region, true))
                     .replace("{region}", region)
@@ -159,7 +161,7 @@ function GetFoodHTML(food, specRegion, colorCode) {
                     .replace("{favorite}", food.favorite ? `<i class='emoji e1F31F' title='Personal Favorite'></i>` : "")
                     .replace("{regionName}", data[region].name)
                     .replace(/\{title\}/g, food.name)
-                    .replace("{date}", weirdDate)
+                    .replace("{date}", formattedDate)
                     .replace(/\{img\}/g, food.img)
                     .replace("{text}", food.desc)
                     .replace(/\{emoji\}/g, emojiHTML)
@@ -204,8 +206,18 @@ function LoadCountry(code) {
     if($("#world-map").is(":visible")) {
         map.setFocus({region: (jeff.focusArea || code)});
     }
-    $("main .country-name").text(jeff.name);
+    $("main .country-name").html(GetFlagHTML(currentCountry, true) + " " + jeff.name);
     $("main .country-desc").text(jeff.desc);
+
+    $("main .population").text(jeff.population.toLocaleString()).attr("title", "est. " + jeff.popEstimate);
+    $("main .area").text(jeff.area.toLocaleString());
+    $("main .independence").text(GetFormattedDate(jeff.independence));
+    $("main .indFrom").text(jeff.indFrom);
+    $("main .demonym").text(jeff.demonym);
+    $("main .currency").html(decodeURIComponent(jeff.currency));
+    $("main .neighbors").text(jeff.neighbors);
+    $("main .languages").text(jeff.languages);
+    $("main .motto").text(jeff.motto);
 
     const hasFilters = HasFilters();
     const food = jeff.food.map(e => GetFoodHTML(e, code, hasFilters)).join("");
@@ -221,11 +233,13 @@ function LoadCountry(code) {
     RenderEmojis();
     ScrollTop();
 }
-function DoSearch(query) {
+function DoSearch(query, forcedName) {
     viewState = 2;
     $("main").empty().append($("#specificView").html());
     query = query || "";
-    if(query.length === 0) {
+    if(forcedName !== undefined) {
+        $("main .searchLabel").text(forcedName);
+    }else if(query.length === 0) {
         $("main .searchLabel").text(HasFilters() ? "Filter Results" : "All Foods");
     } else {
         $("main .searchLabel").text("Search Results for '" + query + "'" + (HasFilters() ? " plus filters" : ""));
@@ -258,19 +272,39 @@ $(function() {
             <i class='emoji e2796'></i>
         </a>
     </div> 
-    <i class='emoji e{0}'></i> {1}</li>`;
-    const $dietList = $(".filterFoodTypes"), dietCategories = ["Dairy", "Egg", "Fish", "Gluten", "Meat", "Nuts", "Peanuts", "Soy", "Spicy", "Vegan"]; 
+    <span class='justMeThanks'><i class='emoji e{0}'></i> {1} <span class='typeCount'>({3})</span></span></li>`;
+    const allFoods = GetAllData().food;
+    const $dietList = $(".filterFoodTypes"), dietCategories = ["Alcohol", "Dairy", "Egg", "Fish", "Gluten", "Meat", "Nuts", "Soy", "Spicy", "Vegan"]; // "Peanuts", 
     for(let i = 0; i < dietCategories.length; i++) {
         const food = dietCategories[i];
         const emoji = foodEmojiMap[food];
-        $dietList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "diet"));
+        const num = allFoods.filter(f => f.diet.some(d => d.type === food)).length;
+        $dietList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "diet").replace("{3}", num));
     }
-    const $dishList = $(".filterDishTypes"), dishCategories = ["Bread", "Dessert", "Dumpling", "Pastry", "Salad", "Sauce", "Soup", "Vegetable", "Wrap"];
+    const $dishList = $(".filterDishTypes"), dishCategories = ["Beverage", "Bread", "Dessert", "Dumpling", "Noodle", "Pastry", "Rice", "Salad", "Sauce", "Soup", "Vegetable", "Wrap"];
     for(let i = 0; i < dishCategories.length; i++) {
         const food = dishCategories[i];
         const emoji = foodEmojiMap[food];
-        $dishList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "dish"));
+        const num = allFoods.filter(f => f.type === food).length;
+        $dishList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "dish").replace("{3}", num));
     }
+    $(".justMeThanks").on("click", function() {
+        const $parent = $(this).closest("li");
+        const val = $parent.attr("data-type");
+        let msg = "";
+        dietPlusFilters = []; dietMinusFilters = [];
+        dishPlusFilters = []; dishMinusFilters = [];
+        if($parent.hasClass("diet")) {
+            msg = `All Dishes with ${val}`;
+            dietPlusFilters.push(val);
+        } else {
+            msg = `All ${val} Dishes`;
+            dishPlusFilters.push(val);
+        }
+        UpdateFilters();
+        DoSearch("", msg);
+        if($(this).closest("ul").hasClass("inner")) { $("#moreInfo").slideToggle(); }
+    });
     $(".foodAdd").on("click", function() {
         const $parent = $(this).closest("li");
         const val = $parent.attr("data-type");
@@ -311,21 +345,67 @@ $(function() {
         }
         UpdateFilters();
     });
+    $(".mobileSearchExpand").on("click", function() {
+        const isOpen = $(this).attr("data-open") === "1";
+        if(isOpen) {
+            $("i", $(this)).removeClass("e2796").addClass("e2795");
+            $(this).attr("data-open", "0");
+            $(`.${$(this).attr("data-for")}.inner`).slideToggle();
+        } else {
+            $("i", $(this)).removeClass("e2795").addClass("e2796");
+            $(this).attr("data-open", "1");
+            $(`.${$(this).attr("data-for")}.inner`).slideToggle();
+        }
+        RenderEmojis();
+    });
 
     const keys = Object.keys(data), keydata = {}, colorData = {};
     const $countryList = $(".filterCountries");
+    const sectionHTML = "<li><ul class='letter' style='display:none' data-letter='0'></ul></li>";
+    const letterHeaderHTML = `<li>
+        <h6 class='letterHeader sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-1 text-white-50'>
+        XXX
+        <a class="badge badge-secondary letterExpand" data-open="0" data-letter="XXX"><i class="emoji e2795"></i></a>
+        </h6>
+    </li>`;
+    let currentLetter = "A", $section = $(sectionHTML.replace("0", "A")), $secList = $section.find("ul");
     for(let i = 0; i < keys.length; i++) {
-        $countryList.append(GetFlagHTML(keys[i]));
-        keydata[keys[i]] = 1;
-        colorData[keys[i]] = "#FF0000";
+        const cc = keys[i];
+        const startLetter = data[cc].realFirstLetter || data[cc].name[0];
+        if(startLetter !== currentLetter) {
+            $countryList.append(letterHeaderHTML.replace(/XXX/g, currentLetter));
+            $countryList.append($section);
+            currentLetter = startLetter;
+            $section = $(sectionHTML.replace("0", currentLetter));
+            $secList = $section.find("ul");
+        }
+        $secList.append(GetFlagHTML(cc));
+        keydata[cc] = 1;
+        colorData[cc] = "#FF0000";
     }
+    $countryList.append(letterHeaderHTML.replace(/XXX/g, currentLetter));
+    $countryList.append($section);
+    $(".letterExpand:last").attr("data-open", "1").find("i").removeClass("e2795").addClass("e2796");
+    $("ul.letter:last").show();
+    $(".letterExpand").on("click", function() {
+        if($(this).attr("data-open") === "1") {
+            $(this).attr("data-open", "0").find("i").removeClass("e2796").addClass("e2795");
+            $(this).closest("ul").find(`ul.letter[data-letter='${$(this).attr("data-letter")}']`).slideUp();
+        } else {
+            $("ul.letter").slideUp();
+            $("a.letterExpand").attr("data-open", "0").find("i").removeClass("e2796").addClass("e2795");
+            $(this).attr("data-open", "1").find("i").removeClass("e2795").addClass("e2796");
+            $(this).closest("ul").find(`ul.letter[data-letter='${$(this).attr("data-letter")}']`).slideDown();
+        }
+        RenderEmojis();
+    });
+
     const count = Math.round(100 * (keys.length / 206));
-    if(count < 13) { // still in the A's
-        const aCount = Math.round(100 * (keys.length / 13));
-        $("#progressBar").css("width", aCount + "%").attr("aria-valuenow", aCount).text(keys.length + "/13 regions starting with 'A'");
-    } else {
-        $("#progressBar").css("width", count + "%").attr("aria-valuenow", count).text(keys.length + "/206");
-    }
+    $("#progressBar").css("width", count + "%").attr("aria-valuenow", count).text(keys.length + "/206 regions");
+    const aCount = Math.round(100 * (keys.length / 13));
+    $("#progressBar2").css("width", aCount + "%").attr("aria-valuenow", aCount).text("13/13 regions starting with 'A'");
+    //const bCount = Math.round(100 * ((keys.length - 13) / 17));
+    //$("#progressBar2").css("width", bCount + "%").attr("aria-valuenow", bCount).text((keys.length - 13) + "/17 regions starting with 'B'");
 
     // Mobile Setup
     $(document).on("mouseup", function(e) {
