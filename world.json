@@ -1,0 +1,169 @@
+{
+	"sv|nuegados": {
+		"name": "Nuégados de Yuca", "servings": "25",
+		"author": "Vera Abitbol", "source": "https://www.196flavors.com/salvador-nuegados-de-yuca/",
+		"prepTime": "10m", "cookTime": "30m", "totalTime": "40m",
+		"notes": "",
+		"tags": ["El Salvador"],
+		"ingredience": [
+			{ "group": "Nuégados", "amount": "1", "unit": "lb", "ingredient": "cassava, peeled, rinsed and ground very finely" },
+			{ "group": "Nuégados", "amount": "2", "unit": "", "ingredient": "eggs, beaten" },
+			{ "group": "Nuégados", "amount": "1", "unit": "tsp", "ingredient": "baking powder" },
+			{ "group": "Nuégados", "amount": "3", "unit": "oz.", "ingredient": "queso fresco, grated" },
+			{ "group": "Nuégados", "amount": "1/4", "unit": "tsp", "ingredient": "salt" },
+			{ "group": "Nuégados", "amount": "", "unit": "none", "ingredient": "vegetable oil, (for frying)" },
+			{ "group": "Panela Honey", "amount": "1/2", "unit": "lb", "ingredient": "panela, broken into pieces or ground" },
+			{ "group": "Panela Honey", "amount": "1", "unit": "cup", "ingredient": "water" },
+			{ "group": "Panela Honey", "amount": "2", "unit": "", "ingredient": "cinnamon stick" },
+			{ "group": "Panela Honey", "amount": "3", "unit": "", "ingredient": "cloves" }
+		],
+		"steps": [
+			"Pour the panela into a large saucepan.",
+			"Add the water and spices.",
+			"Simmer over medium heat until the panela is completely dissolved.",
+			"Mix and boil over low heat, stirring frequently until the honey thickens enough to leave the spoon covered with a light layer, about 10 to 15 minutes. Set aside.",
+			"Mix all the ingredients to form a soft dough.",
+			"Shape the nuégados like a small tortilla.",
+			"Heat a large pot with oil and deep-fry the nuégados until they are golden brown.",
+			"Serve the nuégados drizzled with panela honey."
+		],
+		"important": false, "date": 1580617034882, "val": "Nuégados de Yuca"
+	},
+	"sv|atol": {
+		"name": "Atol de Elote", "servings": "3",
+		"author": "Sasha Martin", "source": "http://globaltableadventure.com/recipe/creamy-sweet-corn-drink-atol-de-elote/",
+		"prepTime": "5m", "cookTime": "15-20m", "totalTime": "20-25m",
+		"notes": "",
+		"tags": ["El Salvador"],
+		"ingredience": [
+			{ "amount": "1", "unit": "lb", "ingredient": "corn" },
+			{ "amount": "2", "unit": "cup", "ingredient": "milk, plus extra as needed" },
+			{ "amount": "1", "unit": "", "ingredient": "cinnamon stick" },
+			{ "amount": "1/4", "unit": "cup", "ingredient": "sugar" },
+			{ "amount": "", "unit": "none", "ingredient": "ground cinnamon, for garnish" }
+		],
+		"steps": [
+			"Combine all ingredients in a pot, adding sugar to taste.",
+			"Simmer 15-20 minutes.",
+			"Blend with immersion blender or cool slightly and use a traditional blender.",
+			"Strain. Serve hot with a dusting of ground cinnamon."
+		],
+		"important": false, "date": 1580616847295, "val": "Atol de Elote"
+	},
+	"sv|pupusa": {
+		"name": "Cheese Pupusas", "servings": "8",
+		"author": "peep", "source": "https://www.allrecipes.com/recipe/257631/basic-cheese-pupusas/",
+		"prepTime": "40m", "cookTime": "12m", "totalTime": "8h 57m", 
+		"notes": "", 
+		"tags": ["El Salvador"],
+		"ingredience": [
+			{ "group": "Curtido", "amount": "2", "unit": "cup", "ingredient": "shredded green cabbage" },
+			{ "group": "Curtido", "amount": "1/2", "unit": "cup", "ingredient": "apple cider vinegar" },
+			{ "group": "Curtido", "amount": "1/2", "unit": "cup", "ingredient": "water, or more as needed" },
+			{ "group": "Curtido", "amount": "1/2", "unit": "", "ingredient": "onion, thinly sliced" },
+			{ "group": "Curtido", "amount": "1", "unit": "", "ingredient": "carrot, grated" },
+			{ "group": "Curtido", "amount": "1/4", "unit": "tsp", "ingredient": "ground oregano" },
+			{ "group": "Curtido", "amount": "1/4", "unit": "tsp", "ingredient": "red pepper flakes" },
+			{ "group": "Curtido", "amount": "", "unit": "toTaste", "ingredient": "salt" },
+			{ "group": "Pupusa Dough", "amount": "3", "unit": "cup", "ingredient": "masa harina flour" },
+			{ "group": "Pupusa Dough", "amount": "1.5", "unit": "cup", "ingredient": "water" },
+			{ "group": "Pupusa Dough", "amount": "1/2", "unit": "tsp", "ingredient": "salt" },
+			{ "group": "Pupusa Filling", "amount": "1", "unit": "cup", "ingredient": "ricotta cheese" },
+			{ "group": "Pupusa Filling", "amount": "1", "unit": "cup", "ingredient": "shredded mozzarella cheese" },
+			{ "group": "Pupusa Filling", "amount": "2", "unit": "tbsp", "ingredient": "heavy whipping cream, or more to taste" },
+			{ "group": "Pupusa Filling", "amount": "1", "unit": "", "ingredient": "scallion, finely chopped" },
+			{ "group": "Pupusa Filling", "amount": "", "unit": "none", "ingredient": "cooking spray" }
+		],
+		"steps": [
+			"Bring a large pot of lightly salted water to a boil. Add cabbage and cook uncovered until slightly softened, about 3 minutes. Drain in a colander and immediately immerse in ice water for several minutes to stop the cooking process. Drain.",
+			"Mix cabbage, apple cider vinegar, water, onion, carrot, oregano, red pepper flakes, and 1 pinch salt together in a large bowl. Refrigerate until flavors combine, 8 hours to overnight.",
+			"Combine masa harina, water, and [1/2 teaspoon] salt together in a large bowl; knead until a smooth, moist dough forms. Add water if dough cracks when you press down on it. Let dough rest, 5 to 10 minutes.",
+			"Stir ricotta cheese, mozzarella cheese, heavy cream, and scallion together in a bowl to make a paste.",
+			"Divide dough into [8] balls. Press your thumb into the center of each ball to form an indentation. Fill indentations with ricotta cheese paste. Pinch edges together around the filling; flatten and smooth into round 1/4 inch-thick patties between your palms.",
+			"Grease a skillet with cooking spray; preheat over medium heat. Cook pupusas in batches until browned, 2 to 3 minutes per side.",
+			"Drain cabbage mixture and serve alongside pupusas."
+		],
+		"important": false, "date": 1579840009596, "val": "Cheese Pupusas"
+	},
+	"gq|kongodo": {
+		"name": "Nkate Cake (Kongodo)", "servings": "8",
+		"author": "Sarah-Eden Dadoun", "source": "https://www.196flavors.com/equatorial-guinea-nkate-cake-kongodo/",
+		"prepTime": "25m", "cookTime": "30m", "totalTime": "55m",
+		"notes": "",
+		"tags": ["Equatorial Guinea"],
+		"ingredience": [
+			{ "amount": "1", "unit": "lb", "ingredient": "unsalted peanuts" },
+			{ "amount": "1/2", "unit": "", "ingredient": "lemon" },
+			{ "amount": "3", "unit": "tbsp", "ingredient": "water" },
+			{ "amount": "1", "unit": "cup", "ingredient": "caster sugar" }
+		],
+		"steps": [
+			"Preheat the oven to [320F].",
+			"Spread the raw peanuts evenly on a baking sheet.",
+			"Place the baking sheet in the center of the oven and roast the peanuts for 10 minutes, stirring occasionally.",
+			"Remove the baking sheet from the oven and let the peanuts cool completely.",
+			"Spread the peanuts on a cutting board and crush them with a rolling pin.",
+			"Pour the sugar into a non-stick pan and add the water and a few drops of lemon juice.",
+			"Cook the sugar over medium heat and let it dissolve until it reaches a temperature of [320F] on a candy thermometer.",
+			"At this point, the sugar syrup should be light in color.",
+			"Add the crushed peanuts to the sugar syrup.",
+			"Stir vigorously for 2 to 3 minutes over low heat.",
+			"Spread the mixture on a previously oiled cutting board (or between 2 sheets of parchment paper) and use a rolling pin to flatten it to a thickness of about [1/3 inch].",
+			"Using a large sharp knife, make slight incisions of [2 inch] squares very quickly while the mixture is still hot. Operate very quickly before it hardens.",
+			"Once the nkate has cooled, cut the precut pieces along the cut lines."
+		],
+		"important": false, "date": 1580618168244, "val": "Nkate Cake (Kongodo)"
+	},
+	"gq|porridge": {
+		"name": "Ginger Millet Porridge", "servings": "2",
+		"author": "", "source": "http://globaltableadventure.com/recipe/ginger-millet-porridge/",
+		"prepTime": "5m", "cookTime": "10-15m", "totalTime": "20-25m",
+		"notes": "",
+		"tags": ["Equatorial Guinea"],
+		"ingredience": [
+			{ "amount": "1", "unit": "cup", "ingredient": "millet flour" },
+			{ "amount": "1/2", "unit": "tsp", "ingredient": "ginger root, grated" },
+			{ "amount": "2", "unit": "tbsp", "ingredient": "sugar, plus extra as needed" },
+			{ "amount": "1", "unit": "cup", "ingredient": "water" },
+			{ "amount": "1 1/2", "unit": "cup", "ingredient": "milk" },
+			{ "amount": "", "unit": "none", "ingredient": "ground cinnamon" }
+		],
+		"steps": [
+			"Add the millet flour, ginger, and sugar to a bowl. Whisk in the water until a smooth batter forms.",
+			"Add the batter to a small pot.",
+			"Click on the heat and pour on [1 1/2 cups] of milk.",
+			"Bring the mixture to a simmer and cook until thickened. You must keep whisking this to avoid lumps and sticking – it works just like making custard or pudding. Add the rest of the milk if it gets too thick.",
+			"Serve with sugar and cinnamon on top."
+		],
+		"important": false, "date": 1580618358008, "val": "Ginger Millet Porridge"
+	},
+	"gq|ginja": {
+		"name": "Ginja Beer", "servings": "6",
+		"author": "Sabrina Gérard", "source": "https://www.196flavors.com/equatorial-guinea-ginger-beer-ginja-beer/",
+		"prepTime": "30m", "cookTime": "10m", "totalTime": "2d 1h40m",
+		"notes": "",
+		"tags": ["Equatorial Guinea"],
+		"ingredience": [
+			{ "group": "Ginja Syrup", "amount": "1", "unit": "cup", "ingredient": "caster sugar" },
+			{ "group": "Ginja Syrup","amount": "1/2", "unit": "cup", "ingredient": "water" },
+			{ "group": "Ginja Syrup","amount": "5", "unit": "oz.", "ingredient": "fresh ginger, peeled and finely grated" },
+			{ "group": "Ginja Beer", "amount": "1/4", "unit": "tsp", "ingredient": "dehydrated baker's yeast" },
+			{ "group": "Ginja Beer", "amount": "", "unit": "none", "ingredient": "Ginja Syrup" },
+			{ "group": "Ginja Beer", "amount": "3", "unit": "tbsp", "ingredient": "freshly squeezed lemon juice" },
+			{ "group": "Ginja Beer", "amount": "7", "unit": "cup", "ingredient": "water" }
+		],
+		"steps": [
+			"Pour the ginger, sugar and water in a saucepan over medium heat and stir until reaching boiling point and the sugar is dissolved.",
+			"Turn off the heat and let the mixture steep for one hour.",
+			"Filter the mixture (discard the pieces of ginger pulp) and let cool.",
+			"Place a funnel at the top of a large plastic bottle.",
+			"Sprinkle the yeast, and add the ginger syrup, lemon juice and water.",
+			"Place the cap on the bottle and shake it until the yeast is dissolved.",
+			"Place the bottle in a shaded area at room temperature or in a pantry, away from direct sunlight for 48 hours.",
+			"During fermentation, be sure to open the bottle every day to release the excess gas, otherwise the bottle may explode.",
+			"At this stage, the ginja beer is ready to drink and must be refrigerated to prevent further fermentation.",
+			"Serve with ice."
+		],
+		"important": false, "date": 1580618568525, "val": "Ginja Beer (Ginger Beer)"
+	}
+}
