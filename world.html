@@ -24,13 +24,17 @@
             .letter > li { list-style: none }
             .letter { padding-left: 10px }
             .card.bg-beverage { background-color: #3F3F3F }
+            .card.bg-curry { background-color: #5F5F3F }
             .card.bg-dumpling { background-color: #3F3521 }
             .card.bg-pastry { background-color: #3F2A0C }
             .card.bg-wrap { background-color: #3F3123 }
             .card.bg-bread { background-color: #3F2E26 }
+            .card.bg-casserole { background-color: #3F3F11 }
             .card.bg-dessert { background-color: #3F0811 }
+            .card.bg-meat { background-color: #3F2E26 }
             .card.bg-noodle { background-color: #3F3F11 }
-            .card.bg-rice { background-color: #3F3F11 }
+            .card.bg-rice { background-color: #5F5F3F }
+            .card.bg-other { background-color: #3F140C }
             .card.bg-sauce { background-color: #3F140C }
             .card.bg-soup { background-color: #3F3113 }
             .card.bg-salad { background-color: #083F11 }
@@ -66,7 +70,7 @@
             <input id="searchbox" class="form-control form-control-dark w-100 hide-sm" type="text" placeholder="Search and Filter" aria-label="Search">
             <ul class="navbar-nav px-3 hide-sm">
                 <li class="nav-item text-nowrap">
-                    <a class="copyrightLink" href="#copyright">&copy; 2018 Sean Finch / Haunted Bees Productions</a>
+                    <a class="copyrightLink" href="#copyright">&copy; 2020 Sean Finch / Haunted Bees Productions</a>
                 </li>
             </ul>
             <div id="moreInfo" class="navbar-brand col-sm-12 sm-only" style="display:none">
@@ -108,7 +112,7 @@
                 </nav>
                 <main id="main" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"></main>
                 <footer class="footer fixed-bottom sm-only">
-                    <a class="copyrightLink" href="#copyright">&copy; 2018 Sean Finch / Haunted Bees Productions</a>
+                    <a class="copyrightLink" href="#copyright">&copy; 2020 Sean Finch / Haunted Bees Productions</a>
                 </footer>
             </div>
         </div>
@@ -125,7 +129,8 @@
                     <a href="https://twitter.com/hauntedbees" target="_blank">@hauntedbees</a>.
                 </p>
                 <p class="px-4">With that said, have fun! Click areund on the filters to find stuff, or search by recipe name or ingredient in the search box! If you just 
-                want to see every food that matches your filters, just go into the search box and hit Enter without typing anything!</p>
+                want to see every food that matches your filters, just go into the search box and hit Enter without typing anything! Or if you just want to see my favorite 
+                foods and songs, click <strong><a class="justTheHits" href="#">here</a></strong>!</p>
                 <div class="progress" style="margin-bottom:20px">
                     <div id="progressBar2" class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">a</div>
                 </div>
@@ -165,6 +170,41 @@
                             <div><span><i class="emoji e1F3C6"></i></span> <a href = "https://open.spotify.com/user/1221454990/playlist/0UNMZqyV5PEsH323LI2IfY?si=fB-Lyv6DRRqfyXtw4DSpmg" target="_blank">Favorites the World</a></div>
                             <h3>Random Songs</h3>
                             <div class="randomSongs"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="theHits">
+                <h4 class="px-3 mt-4 mb-1 hide-sm" title="Areund the World v1.5">The Hits</h1>
+                <hr class="hide-sm">
+                <br class="sm-only">
+                <div class="container-fluid">
+                    <div class="row hide-sm">
+                        <div class="countryinfo col-8">
+                            <h3>Favorite Foods</h3>
+                            <div class="favView"></div>
+                        </div>
+                        <div class="countryinfo col-4">
+                            <h3>Favorite Songs</h3>
+                            <div class="favSongs"></div>
+                        </div>
+                    </div>
+                    <div class="row sm-only">
+                        <ul class="mobileTabs nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="viewLeft nav-link active" href="#">Food</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="viewRight nav-link" href="#">Music</a>
+                            </li>
+                        </ul>
+                        <div class="left">
+                            <h3>Favorite Foods</h3>
+                            <div class="favView"></div>
+                        </div>
+                        <div class="right musicMobile" style="display:none">
+                            <h3>Favorite Songs</h3>
+                            <div class="favSongs"></div>
                         </div>
                     </div>
                 </div>
@@ -245,16 +285,22 @@
             <div id="copyrightInfo">
                 <h4 class="px-3 mt-4 mb-1">Areund the World Legal Deets</h4>
                 <hr>
-                <p class="px-4">Areund the World is &copy; 2018 <a href="mailto:fench@hauntedbees.com">Sean Finch</a> and <a href="http://www.hauntedbees.com">Haunted Bees Productions</a>. All source code is licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU AGPLv3</a> license. All photographs and text are my own and are licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> license. Emoji display is handled by <a href="https://github.com/twitter/twemoji" target="_blank">Twemoji</a>, which is used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> license. All recipes linked to belong to their respective owners.</p>
+                <p class="px-4">Areund the World is &copy; 2018-2020 <a href="mailto:fench@hauntedbees.com">Sean Finch</a> and <a href="https://www.hauntedbees.com">Haunted Bees Productions</a>. All source code is licensed under the <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU AGPLv3</a> license. All photographs and text are my own and are licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> license. Emoji display is handled by <a href="https://github.com/twitter/twemoji" target="_blank">Twemoji</a>, which is used under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> license. All recipes linked to belong to their respective owners.</p>
                 <p class="px-4">I'm using <a href="https://en.wikipedia.org/wiki/List_of_sovereign_states" target="_blank">Wikipedia's list of sovereign states</a> 
                     as my reference for this, which means I'll be including places that may not officially be considered countries by most of the world, 
                     so please don't think I'm making a political statement by including them on here. I probably am, but mostly I just want to try a bunch 
                     of food and maybe learn a little bit more about the world. Secondly, I am from California and I speak English. If you are looking 
                     for 100% authenticity on regional dishes, you should probably consult a resource from that region, not some dude in California with 
-                    too much free time and internet access.
-                </p>
-                <p class="px-4">Haunted Bees Productions is not affiliated with any of the websites linked to on this page.</p>
-                <p class="px-4">We use a self-hosted <a href="https://matomo.org/" target="_blank">Matomo</a> installation for webpage analytics. Your data will never leave Haunted Bees' servers or shared with anybody else. We just want to know where people are coming from in the event this page gets popular or something, you know what I mean? Like, do we thank some blogger? A Facebook post? Reddit? Only one way to find out and that's analytics, baby!</p>
+                    too much free time and internet access.</p>
+                <p class="px-4">Some of the dishes hosted here have recipes in the <a href="https://www.hauntedbees.com/databee.html">DataBee Recipe Format</a>. DataBee is 
+                    an app also produced by Haunted Bees. DataBee Recipes can be found by clicking on the <i class="emoji e1F41D"></i> icon next to food entries, and are adapted 
+                    from the linked recipes technically without permission. I'll worry about the ethics or legality of that once I get a Cease and Desist.</p>
+                <p class="px-4">Haunted Bees Productions is not affiliated with any of the websites linked to on this page. Sharing of artists and their songs on this page
+                    does not mean that I endorse them or condone their views/beliefs/etc. I do not even understand the lyrics to most of the linked songs since they aren't in 
+                    English and I am a monolingual fool. Linked music videos may include sexual content, violence, strong language, and so on. Content Warnings can be added if 
+                    that is a thing anyone viewing this site (i.e. probably just my mom) cares about. Having said that, if one of the songs linked here is actually about how 
+                    Nazis are good or something obviously bad like that, let me know and I'll take it down.</p>
+                <p class="px-4">We use a self-hosted <a href="https://awstats.sourceforge.io/" target="_blank">AWStats</a> installation for webpage analytics. Your data will never leave Haunted Bees' servers or be shared with anybody else. We just want to know where people are coming from in the event this page gets popular or something, you know what I mean? Like, do we thank some blogger? A Facebook post? Reddit? Only one way to find out and that's analytics, baby!</p>
             </div>
             <div id="noResults">
                 <p class="px-4">No Results Found. Try searching for a specific ingredient like "pepper" or "beef" and use the filters to specify dietary restrictions and recipe types.</p>
@@ -265,7 +311,10 @@
                 <div class="card-header">
                     <a href="#{region}" title="{regionName}">{flag}</a> 
                     <span>{typeIcon}{favorite}</span> 
-                    <strong><a href="{link}" target="_blank" title="Click here to see the recipe!" alt="Click here to see the recipe!">{title} <i class="emoji e1F517"></i></a></strong>
+                    <strong>
+                        <a href="{link}" target="_blank" title="Click here to see the recipe!" alt="Click here to see the recipe!">{title} <i class="emoji e1F517"></i></a>
+                        {databee}
+                    </strong>
                     <span class="cookedDate">{date}</span>
                 </div>
                 <div class="card-body">

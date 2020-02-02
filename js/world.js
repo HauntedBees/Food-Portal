@@ -7,6 +7,7 @@ const foodEmojiMap = {
     "Meat": "1F356", 
     "Dairy": "1F95B", 
     "Egg": "1F95A", 
+    "Honey": "1F36F", 
     "Spicy": "1F336",
     "Vegan": "1F33F",
     "Gluten": "1F35E", 
@@ -15,6 +16,7 @@ const foodEmojiMap = {
     "Nuts": "1F330",
     "Peanuts": "1F95C",
     "Alcohol": "1F377",
+    "Warning": "26A0",
     // Food Types
     "Dumpling": "1F95F",
     "Pastry": "1F950",
@@ -27,10 +29,12 @@ const foodEmojiMap = {
     "Vegetable": "1F955",
     "Beverage": "1F379",
     "Noodle": "1F35D",
-    "Rice": "1F35A"
+    "Rice": "1F35A",
+    "Casserole": "1F372",
+    "Other": "1F962",
+    "Curry": "1F35B"
     // Missing Types:
     // Sandwich? <-- Wraps for now
-    // Curry?
     // Fried?
     // Side dish?
 };
@@ -151,7 +155,7 @@ function IsSearchMatch(food, query) {
 /* Template Population */
 function GetFoodHTML(food, specRegion, colorCode) {
     const template = $("#template").html();
-    const emojiHTML = food.diet.map(diet => `<li class='nav-item'><i title='Contains ${diet.type}' class='emoji e${foodEmojiMap[diet.type]}'></i> ${diet.desc}</li>`).join("");
+    const emojiHTML = food.diet.map(diet => `<li class='nav-item'><i title='Contains ${diet.type}' class='emoji e${foodEmojiMap[diet.type]} ${diet.optional ? "optional" : ""}'></i> ${diet.desc}</li>`).join("");
     const formattedDate = food.date === "" ? "TBD" : GetFormattedDate(food.date);
     const region = specRegion || food.region;
     let html = template.replace("{flag}", GetFlagHTML(region, true))
@@ -160,12 +164,17 @@ function GetFoodHTML(food, specRegion, colorCode) {
                     .replace("{typeIcon}", `<i class='emoji e${foodEmojiMap[food.type]}' title='${food.type}'></i>`)
                     .replace("{favorite}", food.favorite ? `<i class='emoji e1F31F' title='Personal Favorite'></i>` : "")
                     .replace("{regionName}", data[region].name)
-                    .replace(/\{title\}/g, food.name)
+                    .replace(/\{title\}/g, (food.encoded ? decodeURIComponent(food.name) : food.name))
                     .replace("{date}", formattedDate)
                     .replace(/\{img\}/g, food.img)
                     .replace("{text}", food.desc)
                     .replace(/\{emoji\}/g, emojiHTML)
                     .replace("{link}", food.url);
+    if(food.databee) {
+        html = html.replace("{databee}", `<a class="databee" href="https://www.hauntedbees.com/food/getRecipe/${region.toLowerCase()}/${food.databee}" target="_blank" title="Click here to get the recipe in Databee Format!" alt="Click here to get the recipe in Databee Format!" download><i class="emoji e1F41D"></i></a>`);
+    } else {
+        html = html.replace("{databee}", "");
+    }
     if(colorCode) { html = html.replace(/bg-[a-z]+/, (IsFilterMatch(food) ? "bg-match" : "bg-nomatch")); }
     return html;
 }
@@ -207,16 +216,21 @@ function LoadCountry(code) {
         map.setFocus({region: (jeff.focusArea || code)});
     }
     $("main .country-name").html(GetFlagHTML(currentCountry, true) + " " + jeff.name);
-    $("main .country-desc").text(jeff.desc);
+    $("main .country-desc").html(jeff.desc);
 
     $("main .population").text(jeff.population.toLocaleString()).attr("title", "est. " + jeff.popEstimate);
     $("main .area").text(jeff.area.toLocaleString());
-    $("main .independence").text(GetFormattedDate(jeff.independence));
-    $("main .indFrom").text(jeff.indFrom);
-    $("main .demonym").text(jeff.demonym);
+    if(jeff.indFrom === "X") {
+        $("main .independence").text(jeff.independence);
+        $("main .indFrom").text("the Void");
+    } else {
+        $("main .independence").text(GetFormattedDate(jeff.independence));
+        $("main .indFrom").text(jeff.indFrom);
+    }
+    $("main .demonym").html(jeff.demonym);
     $("main .currency").html(decodeURIComponent(jeff.currency));
     $("main .neighbors").text(jeff.neighbors);
-    $("main .languages").text(jeff.languages);
+    $("main .languages").text(decodeURIComponent(jeff.languages));
     $("main .motto").text(jeff.motto);
 
     const hasFilters = HasFilters();
@@ -245,7 +259,7 @@ function DoSearch(query, forcedName) {
         $("main .searchLabel").text("Search Results for '" + query + "'" + (HasFilters() ? " plus filters" : ""));
     }
     const resultView = $("main .searchFoods");
-    const foodList = GetAllData(function(a, b) { return a.name.localeCompare(b.name); }).food;
+    const foodList = GetAllData(function(a, b) { return decodeURIComponent(a.name).localeCompare(decodeURIComponent(b.name), "en", {sensitivity: "base"}); }).food;
     resultView.empty();
     let count = 0;
     for(let i = 0; i < foodList.length; i++) {
@@ -256,6 +270,32 @@ function DoSearch(query, forcedName) {
         count++;
     }
     if(count === 0) { resultView.append($("#noResults").html()); }
+    RenderEmojis();
+    ScrollTop();
+}
+function LoadHits() {
+    viewState = 3;
+    $("main").empty().append($("#theHits").html());
+    $(".filterCountries .active").removeClass("active");
+    const allData = GetAllData(function(a, b) { return decodeURIComponent(a.name).localeCompare(decodeURIComponent(b.name), "en", {sensitivity: "base"}); }, true);
+    const foodList = allData.food;
+    let resultView = $("main .favView");
+    resultView.empty();
+    for(let i = 0; i < foodList.length; i++) {
+        if(foodList[i].favorite === true) {
+            resultView.append(GetFoodHTML(foodList[i], undefined, HasFilters()));
+        }
+    }
+    resultView = $("main .favSongs");
+    resultView.empty();
+    const musicList = allData.music;
+    for(let i = 0; i < musicList.length; i++) {
+        const song = musicList[i];
+        if(song.favorite === true) {
+           resultView.append(`<div><span title='${data[song.region].name}'>${GetFlagHTML(song.region, true)}</span> <a href = '${song.url}' target='_blank'>${song.encoded ? decodeURIComponent(song.name) : song.name}${song.favorite ? " <i class='emoji e1F31F' title='Personal Favorite'></i>" : ""}</a></div>`);
+        }
+    }
+    location.hash = "";
     RenderEmojis();
     ScrollTop();
 }
@@ -274,14 +314,14 @@ $(function() {
     </div> 
     <span class='justMeThanks'><i class='emoji e{0}'></i> {1} <span class='typeCount'>({3})</span></span></li>`;
     const allFoods = GetAllData().food;
-    const $dietList = $(".filterFoodTypes"), dietCategories = ["Alcohol", "Dairy", "Egg", "Fish", "Gluten", "Meat", "Nuts", "Soy", "Spicy", "Vegan"]; // "Peanuts", 
+    const $dietList = $(".filterFoodTypes"), dietCategories = ["Alcohol", "Dairy", "Egg", "Fish", "Gluten", "Honey", "Meat", "Nuts", "Peanuts", "Soy", "Spicy", "Vegan"];
     for(let i = 0; i < dietCategories.length; i++) {
         const food = dietCategories[i];
         const emoji = foodEmojiMap[food];
         const num = allFoods.filter(f => f.diet.some(d => d.type === food)).length;
         $dietList.append(sidebarFilterTemplate.replace("{0}", emoji).replace(/\{1\}/g, food).replace("{2}", "diet").replace("{3}", num));
     }
-    const $dishList = $(".filterDishTypes"), dishCategories = ["Beverage", "Bread", "Dessert", "Dumpling", "Noodle", "Pastry", "Rice", "Salad", "Sauce", "Soup", "Vegetable", "Wrap"];
+    const $dishList = $(".filterDishTypes"), dishCategories = ["Beverage", "Bread", "Casserole", "Curry", "Dessert", "Dumpling", "Meat", "Noodle", "Pastry", "Rice", "Salad", "Sauce", "Soup", "Vegetable", "Wrap", "Other"];
     for(let i = 0; i < dishCategories.length; i++) {
         const food = dishCategories[i];
         const emoji = foodEmojiMap[food];
@@ -358,6 +398,10 @@ $(function() {
         }
         RenderEmojis();
     });
+    $(document).on("click", ".justTheHits", function() {
+        LoadHits();
+        return false;
+    });
 
     const keys = Object.keys(data), keydata = {}, colorData = {};
     const $countryList = $(".filterCountries");
@@ -402,10 +446,16 @@ $(function() {
 
     const count = Math.round(100 * (keys.length / 206));
     $("#progressBar").css("width", count + "%").attr("aria-valuenow", count).text(keys.length + "/206 regions");
-    const aCount = Math.round(100 * (keys.length / 13));
-    $("#progressBar2").css("width", aCount + "%").attr("aria-valuenow", aCount).text("13/13 regions starting with 'A'");
+    //const aCount = Math.round(100 * (keys.length / 13));
+    //$("#progressBar2").css("width", aCount + "%").attr("aria-valuenow", aCount).text("13/13 regions starting with 'A'");
     //const bCount = Math.round(100 * ((keys.length - 13) / 17));
     //$("#progressBar2").css("width", bCount + "%").attr("aria-valuenow", bCount).text((keys.length - 13) + "/17 regions starting with 'B'");
+    //const cCount = Math.round(100 * ((keys.length - 30) / 19));
+    //$("#progressBar2").css("width", cCount + "%").attr("aria-valuenow", cCount).text((keys.length - 30) + "/19 regions starting with 'C'");
+    //const dCount = Math.round(100 * ((keys.length - 49) / 4));
+    //$("#progressBar2").css("width", dCount + "%").attr("aria-valuenow", dCount).text((keys.length - 49) + "/4 regions starting with 'D'");
+    const eCount = Math.round(100 * ((keys.length - 53) / 8));
+    $("#progressBar2").css("width", eCount + "%").attr("aria-valuenow", eCount).text((keys.length - 53) + "/8 regions starting with 'E'");
 
     // Mobile Setup
     $(document).on("mouseup", function(e) {

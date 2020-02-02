@@ -11,7 +11,6 @@ html, body { max-width: 100%; overflow-x: hidden }
 .cardimg { border: 1px #BEBEBE solid; border-radius: 5px; max-width: 100% }
 .imgLicense { text-align: right; font-size: x-small; padding: 6px; background-color: rgba(0,0,0,.03) !important }
 .emoji { display: inline-block; width: 16px; height: 16px }
-.emoji.optional { opacity: 0.5; }
 .list-group-item { word-break: keep-all; background-color: inherit }
 .card { margin-bottom: 10px }
 a { color: rgb(0, 155, 255) }
